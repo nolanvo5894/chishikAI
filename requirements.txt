@@ -1,0 +1,36 @@
+# Core dependencies
+aiofiles
+aiohttp
+configparser
+python-dotenv>=1.0.0
+setuptools
+tenacity
+
+# Data processing and scientific libraries
+numpy
+networkx
+graspologic
+
+# File manipulation
+docling
+
+# Machine Learning & LLM related
+accelerate
+tiktoken
+tqdm
+xxhash
+
+# Web and Search
+duckduckgo-search>=4.1.0
+requests>=2.31.0
+
+# RAG (Retrieval Augmented Generation)
+lightrag-hku
+
+# Development and Notebooks
+nest-asyncio>=1.5.8
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Package Management
+pipmaster

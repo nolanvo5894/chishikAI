@@ -1,0 +1,2275 @@
+<!DOCTYPE html><html lang="en" xmlns:wb="https://open.weibo.com/wb" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Majorana 1: Microsoft’s new quantum chip</title><meta name="twitter&#x3A;card" content="summary">
+<meta name="twitter&#x3A;title" content="Majorana&#x20;1&#x3A;&#x20;Microsoft&#x2019;s&#x20;new&#x20;quantum&#x20;chip">
+<meta name="twitter&#x3A;description" content="&lt;p&gt;&lt;a&#x20;href&#x3D;&quot;https&#x3A;&#x2F;&#x2F;www.electronicspecifier.com&#x2F;companies&#x2F;microsoft&quot;&#x20;target&#x3D;&quot;_blank&quot;&gt;Microsoft&lt;&#x2F;a&gt;&#x20;has&#x20;unveiled&#x20;Majorana&#x20;1,&#x20;a&#x20;quantum&#x20;chip&#x20;that&#x20;promises&#x20;a&#x20;significant&#x20;leap&#x20;forward&#x20;in&#x20;the&#x20;development&#x20;of&#x20;large-scale,&#x20;fault-tolerant&#x20;quantum&#x20;computing.&#x20;The&#x20;company&#x20;claims&#x20;that&#x20;this&#x20;breakthrough&#x20;could&#x20;accelerate&#x20;the&#x20;arrival&#x20;of&#x20;practical&#x20;quantum&#x20;computers&#x20;from&#x20;decades&#x20;to&#x20;just&#x20;a&#x20;few&#x20;years&#x20;-&#x20;a&#x20;stark&#x20;contrast&#x20;to&#x20;&lt;a&#x20;href&#x3D;&quot;https&#x3A;&#x2F;&#x2F;www.electronicspecifier.com&#x2F;quantum&#x2F;nvidia-ceo-causes-quantum-stocks-and-confidence-to-tumble&quot;&#x20;target&#x3D;&quot;_blank&quot;&gt;the&#x20;words&#x20;of&#x20;NVIDIA&#x27;s&#x20;CEO&#x20;earlier&#x20;this&#x20;year&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;">
+<meta name="twitter&#x3A;image" content="http&#x3A;&#x2F;&#x2F;www.electronicspecifier.com&#x2F;cms&#x2F;images&#x2F;social&#x2F;majorana1article.png">
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;www.electronicspecifier.com&#x2F;products&#x2F;quantum&#x2F;majorana-1-microsoft-s-new-quantum-chip">
+<meta property="og&#x3A;type" content="article">
+<meta property="og&#x3A;title" content="Majorana&#x20;1&#x3A;&#x20;Microsoft&#x2019;s&#x20;new&#x20;quantum&#x20;chip">
+<meta property="og&#x3A;description" content="Microsoft&#x20;has&#x20;unveiled&#x20;Majorana&#x20;1,&#x20;a&#x20;quantum&#x20;chip&#x20;that&#x20;promises&#x20;a&#x20;significant&#x20;leap&#x20;forward&#x20;in&#x20;the&#x20;development&#x20;of&#x20;large-scale,&#x20;fault-tolerant&#x20;quantum&#x20;computing.&#x20;The&#x20;company&#x20;claims&#x20;that&#x20;this&#x20;breakthrough&#x20;could&#x20;accelerate&#x20;the&#x20;arrival&#x20;of&#x20;practical&#x20;quantum&#x20;computers&#x20;from&#x20;decades&#x20;to&#x20;just&#x20;a&#x20;few&#x20;years&#x20;-&#x20;a&#x20;stark&#x20;contrast&#x20;to&#x20;the&#x20;words&#x20;of&#x20;NVIDIA&#x27;s&#x20;CEO&#x20;earlier&#x20;this&#x20;year.">
+<meta property="og&#x3A;image" content="http&#x3A;&#x2F;&#x2F;www.electronicspecifier.com&#x2F;cms&#x2F;images&#x2F;social&#x2F;majorana1article.png">
+<meta name="description" content="Microsoft&#x20;has&#x20;unveiled&#x20;Majorana&#x20;1,&#x20;a&#x20;quantum&#x20;chip&#x20;that&#x20;promises&#x20;a&#x20;significant&#x20;leap&#x20;forward&#x20;in&#x20;the&#x20;development&#x20;of&#x20;large-scale,&#x20;fault-tolerant&#x20;quantum&#x20;computing.">
+<meta name="google-site-verification" content="I6v2AJHCebzDtuW2vG-orG2cW6IZLbDj1MSXVsrduOQ"><link href="&#x2F;build&#x2F;app.8c32878b.css" media="screen,print" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;img&#x2F;es_favicon.png" rel="shortcut&#x20;icon" type="image&#x2F;vnd.microsoft.icon">
+<link href="https&#x3A;&#x2F;&#x2F;use.typekit.net&#x2F;dif8wnd.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="&#x2F;css&#x2F;famfamfam-flags.css" media="screen" rel="stylesheet" type="text&#x2F;css"><script type="text&#x2F;javascript" src="&#x2F;build&#x2F;app.40dfef48.js"></script>
+<script type="text&#x2F;javascript" src="&#x2F;build&#x2F;runtime.1103dde6.js"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+    $(document).ready(function(){
+    // Disable the submit element
+    $('form').ajaxStart(function(){
+        $(this).find('button[type="submit"]').attr('disabled', 'disabled').text('Loading form...');
+    });
+    // Reactivate the submit button and message
+    $('form').ajaxStop(function(){
+        var submitButton = $(this).find('button[type="submit"]');
+        
+        if (!submitButton.length) {
+            submitButton = $('form').find('button[type="submit"]');
+        }
+        
+        submitButton.removeAttr('disabled').text('Save article');
+    });
+    // prevent form submission when AJAX requests are pending
+    $('form').on('submit', function() {
+        return ($.active == 0) ? true : false;
+    });
+
+    // Bind the website selectors
+    $('select[name=website]').on('change', function(event){
+        updateCategoryOptions();
+    });
+    $('select[name="secondaryWebsites[]"]').on('change', function(event){
+        updateSecondaryCategoryOptions();
+    });
+    // Trigger the change events to initialise the category/attachment selectors
+    $('select[name=website]').change();
+    $('select[name="secondaryWebsites[]"]').change();
+    
+    // Bind to the close button on the Media Manager, to refresh the list of attachments
+    $('body').on('click', '.moxman-close', function(){
+        updateAttachmentOptions();
+    });
+    
+    $('.btn-post-facebook').on('click', function () {
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                var accessToken = response.authResponse.accessToken;
+                var userId = response.authResponse.userID;
+                facebookModal(userId, accessToken);
+            } else {
+                FB.login(function(response){
+                    // handle the response
+                    if (response.status === 'connected') {
+                        var accessToken = response.authResponse.accessToken;
+                        var userId = response.authResponse.userID;
+                        facebookModal(userId, accessToken);
+                    }
+                });
+            }
+        });
+    });
+    
+    function facebookModal(userId, accessToken){
+        var websiteId = $('select[name=website]').val();
+        var categoryId = $('select[name=category]').val();      
+        var companyId = $('input[name=company]').val();
+        var slug = $('input[name=slug]').val();
+        var title = $('input[name=title]').val();
+        var websiteUrl = '';
+        var categoryUrl = '';
+        var postUrl = '';
+        if (!websiteId){
+            alert('Please select a Primary Website before posting');
+            return false;
+        }
+        if (!categoryId){
+            alert('Please select a Primary Category before posting');
+            return false;
+        }
+        if (!companyId){
+            alert('Please select a Company before posting');
+            return false;
+        }
+        $('#postToFacebookModal').modal('show');
+        $.ajax({
+            url: '/admin/website/view/'+websiteId+'?format=json',
+            type: "GET",
+            dataType: 'json',
+            beforeSend : function(){
+                $("#postToFacebookModal .modal-body").addClass('loading muted');
+                $("#postToFacebookModal .modal-body .alert").remove();
+            },
+            success: function(data) {
+                websiteUrl = data.url;
+                $.ajax({
+                    url: '/admin/post-category/view/'+categoryId+'?format=json',
+                    type: "GET",
+                    dataType: 'json',
+                    success: function(data) {
+                        categoryUrl = websiteUrl + data.url;
+                        postUrl = categoryUrl + slug;
+                        $.ajax({
+                            url: '/admin/company/view/'+companyId+'?format=json',
+                            type: "GET",
+                            dataType: 'json',
+                            success: function(data) {
+                                if (data.facebookPageId){
+                                    var facebookTag = '@['+data.facebookPageId+']';
+                                    title += ' '+facebookTag;
+                                } else {
+                                    $("#postToFacebookModal .modal-body").prepend('<div class="alert alert-warning">Please note that '+data.name+' do not have a Facebook Page ID assigned, you can add the data <a href="/admin/company/edit/'+data.id+'" target="_blank">here</a> and then click "Post to Facebook" again.');
+                                }
+                                $('#postToFacebookModal .modal-body form input[name=link]').val(postUrl);
+                                $('#postToFacebookModal .modal-body form textarea[name=message]').val(title);
+                                $('#postToFacebookModal .modal-body form input[name=user_id]').val(userId);
+                                $('#postToFacebookModal .modal-body form input[name=access_token]').val(accessToken);
+                                $("#postToFacebookModal .modal-body").removeClass('loading muted');
+                            }
+                        });
+                    }
+              });
+            }
+        });
+    }
+    
+    $('#postToFacebookModal .modal-footer .btn-primary').on('click', function () {
+        $.ajax({
+            url: '/admin/post/posttofacebook?format=json',
+            type: "POST",
+            data: $('#postToFacebookModal form').serialize(),
+            dataType: 'json',
+            beforeSend : function(){
+                $("#postToFacebookModal .modal-body").addClass('loading muted');
+            },
+            success: function(data) {
+                $("#postToFacebookModal .modal-body").removeClass('loading muted');
+                $.each(data.alerts, function(type, message){
+                    $("#postToFacebookModal .modal-body").prepend('<div class="alert alert-'+type+'">'+message+'</div>');
+                });
+            }
+        });
+    });
+    
+    // Javascript for the "Post to Twitter" popup
+    $('.btn-post-twitter').on('click', function () {
+        var websiteId = $('select[name=website]').val();
+        var categoryId = $('select[name=category]').val();      
+        var companyId = $('input[name=company]').val();
+        var slug = $('input[name=slug]').val();
+        var title = $('input[name=title]').val();
+        var websiteUrl = '';
+        var categoryUrl = '';
+        var postUrl = '';
+        if (!websiteId){
+            alert('Please select a Primary Website before posting');
+            return;
+        }
+        if (!categoryId){
+            alert('Please select a Primary Category before posting');
+            return;
+        }
+        if (!companyId){
+            alert('Please select a Company before posting');
+            return
+        }
+        $.ajax({
+            url: '/admin/website/view/'+websiteId+'?format=json',
+            type: "GET",
+            dataType: 'json',
+            beforeSend : function(){
+                $("#postToTwitterModal .modal-body .alert").remove();
+            },
+            success: function(data) {
+                websiteUrl = data.url;
+                $.ajax({
+                    url: '/admin/post-category/view/'+categoryId+'?format=json',
+                    type: "GET",
+                    dataType: 'json',
+                    success: function(data) {
+                        categoryUrl = websiteUrl + data.url;
+                        postUrl = categoryUrl + slug;
+                        $.ajax({
+                            url: '/admin/company/view/'+companyId+'?format=json',
+                            type: "GET",
+                            dataType: 'json',
+                            success: function(data) {
+                                var twitterTag = '';
+                                if (data.twitterUsername){
+                                    var twitterTag = ' @'+data.twitterUsername.replace('@', '');
+                                } else {
+                                    $("#postToTwitterModal .modal-body").prepend('<div class="alert alert-warning">Please note that '+data.name+' do not have a Twitter Username assigned, you can add the data <a href="/admin/company/edit/'+data.id+'" target="_blank">here</a> and then click "Post to Twitter" again.');
+                                    $('#postToTwitterModal').modal('show');
+                                }
+                                // Check the length of the entire tweet, clip the title if needed
+                                var fullTweet = title+twitterTag+' '+postUrl;
+                                if (fullTweet.length > 280){
+                                    var excess = fullTweet.length - 280;
+                                    var newTitleLength = title.length - excess;
+                                    title = title.substring(0, newTitleLength);
+                                    fullTweet = title+twitterTag+' '+postUrl;
+                                } 
+                                var tweetUrl = 'https://twitter.com/intent/tweet?';
+                                tweetUrl += 'url='+encodeURIComponent(postUrl);                                
+                                tweetUrl += '&text='+encodeURIComponent(title+twitterTag);
+                                var popupWidth = 550;
+                                var popupLeft = parseInt(($(window).width() - popupWidth) / 2);
+                                window.open(tweetUrl, "Twitter", "height=446,width="+popupWidth+",top=100,left="+popupLeft+",resizable=1");                                
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    });
+});
+
+function updateCategoryOptions(){
+    // Update the category options
+    var categorySelect = $('select[name="category"]');
+    var categorySelected = categorySelect.val();
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        url: '/admin/post-category?format=json',
+        data: {'website':$('select[name=website]').val(), 'isPostCategory':1},
+        beforeSend: function(){
+            categorySelect.prop('disabled','disabled');
+        },
+        success: function(data){
+            var options = "";
+            $.each(data, function(groupName, group){
+                options += '<optgroup label="'+groupName+'">';
+                $.each(group, function(id, name){
+                    options += '<option value="'+id+'">'+name+'</option>';
+                });
+                options += '</optgroup>';
+            });
+            categorySelect.html(options);
+        },
+        complete: function(){
+            // Restore the previously selected value
+            categorySelect.val(categorySelected);
+            categorySelect.removeProp('disabled');
+            $('.chzn-done').trigger('liszt:updated');
+            // Update attachment options
+            updateAttachmentOptions();
+        }
+    });
+}
+
+function updateAttachmentOptions(){
+    // Update the attachment options
+    var attachmentsSelect = $('select[name="attachments[]"]');
+    var attachmentsSelected = attachmentsSelect.val();
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        url: '/admin/media?format=json',
+        data: {'website':$('select[name=website]').val()},
+        beforeSend: function(){
+            attachmentsSelect.prop('disabled','disabled');
+        },
+        success: function(data){
+            // Update options
+            var attachmentsOptions = "";
+            if ($(data['whitepapers']).size()){
+                attachmentsOptions += '<optgroup label="Whitepapers">';
+            }
+            $.each(data['whitepapers'], function(id, name){
+                attachmentsOptions += '<option value="'+id+'">'+name+'</option>';
+            });
+            if ($(data['whitepapers']).size()){
+                attachmentsOptions += '</optgroup>';
+            }
+            if ($(data['datasheets']).size()){
+                attachmentsOptions += '<optgroup label="Datasheets">';
+            }
+            $.each(data['datasheets'], function(id, name){
+                attachmentsOptions += '<option value="'+id+'">'+name+'</option>';
+            });
+            if ($(data['datasheets']).size()){
+                attachmentsOptions += '</optgroup>';
+            }
+            attachmentsSelect.html(attachmentsOptions);
+        },
+        complete: function(){
+            // Restore the previously selected values
+            attachmentsSelect.val(attachmentsSelected);
+            attachmentsSelect.removeProp('disabled');
+
+            // Augment the select box to make it searchable
+            attachmentsSelect.chosen({width: "80%"});
+            // Update all chosen boxes
+            $('.chzn-done').trigger('liszt:updated');
+        }
+    });
+}
+
+function updateSecondaryCategoryOptions(){
+    // Update the secondary category options
+    var secondaryCategorysSelect = $('select[name="secondaryCategorys[]"]');
+    var secondaryCategorysSelected = secondaryCategorysSelect.val();
+    var secondaryWebsitesSelected = $('select[name="secondaryWebsites[]"]').val();
+    if (secondaryWebsitesSelected){ 
+        $.ajax({
+            type: "POST",
+            dataType: 'json',
+            url: '/admin/post-category?format=json',
+            data: {'websites':secondaryWebsitesSelected},
+            beforeSend: function(){
+                secondaryCategorysSelect.prop('disabled','disabled');
+            },
+            success: function(data){
+                var options = "";
+                $.each(data, function(groupName, group){
+                    options += '<optgroup label="'+groupName+'">';
+                    $.each(group, function(id, name){
+                        options += '<option value="'+id+'">'+name+'</option>';
+                    });
+                    options += '</optgroup>';
+                });
+                secondaryCategorysSelect.html(options);
+            },
+            complete: function(){
+                // Restore the previously selected value
+                secondaryCategorysSelect.val(secondaryCategorysSelected);
+                secondaryCategorysSelect.removeProp('disabled');
+                $('.chzn-done').trigger('liszt:updated');
+            }
+        });
+    }
+}
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    $(document).ready(function(){
+    $('.search input[name="query"]').autocomplete({
+      source: '/autocomplete/posts',
+      minLength: 2,
+       select: function( event, ui ) {
+            if (ui.item.url){
+                document.location = ui.item.url;
+            }
+        }
+    });
+});
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    $(document).ready(function() {
+
+    $('.like-btn').on('click', function() {  
+        var postId = $(this).data('id');
+        var clickedButton = $(this);
+        if (clickedButton.hasClass('like-btn')) {
+  	         action = 'like';
+        } else {
+            return false;
+        }
+        
+        $.ajax({
+                type: "POST",
+                url: '/likepost?format=json',
+                data: {'action': action, 'post_id': postId},
+                success: function(data) {
+                   res = JSON.parse(data);
+                   if (data) {
+                      clickedButton.removeClass('like-btn');
+  		             // display the number of likes and dislikes
+  		             clickedButton.siblings('span.likes').text(res.likecount);
+                    }
+  	            },
+            });
+        });
+        
+        $('.dislike-btn').on('click', function() {  
+            var postId = $(this).data('id');
+            var action = 'dislike'
+            var clickedButton = $(this);
+            if (clickedButton.hasClass('dislike-btn')) {
+  	            action = 'dislike';
+            } else {
+                return false;
+            }
+            
+            $.ajax({
+                type: "POST",
+                url: '/dislikepost?format=json',
+                data: {'action': action, 'post_id': postId},
+                success: function(data) {
+                    res = JSON.parse(data);
+                    if (data) {
+                        clickedButton.removeClass('dislike-btn');
+                        // display the number of likes and dislikes
+  		                clickedButton.siblings('span.dislikes').text(res.dislikecount);
+                    } 
+  	            },
+            });
+        });
+         
+            
+    }); 
+    //-->
+</script>
+<script type="text&#x2F;javascript" async="async" src="https&#x3A;&#x2F;&#x2F;securepubads.g.doubleclick.net&#x2F;tag&#x2F;js&#x2F;gpt.js"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+    var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //InContent_Boombox_AI
+googletag.cmd.push(function() {
+var inContentMapping = googletag.sizeMapping()
+    .addSize([767,10], [[620, 150],[300, 250]])
+    .addSize([0,0], [300, 250])
+    .build();
+  googletag.defineSlot('/21169631/InContent_Boombox_AI', [[300, 250], [620, 150]], 'div-gpt-ad-1511869493417-0')
+  .defineSizeMapping(inContentMapping)
+  .addService(googletag.pubads());
+});
+//END - InContent_Boombox_AI
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    $(document).ready(function(){
+    $('#category-select').change(function(){
+        var categoryUrl = $(this).val();
+        if (categoryUrl){
+            document.location = categoryUrl;
+        }
+    });
+});
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Leaderboard Backup
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/Leaderboard_300x100', [300, 100], 'div-gpt-ad-1490194999394-0').addService(googletag.pubads());
+});
+
+//END - Leaderboard Backup
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Boom Box 1
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/BoomBox', [[300, 250], [300, 600]], 'div-gpt-ad-1625482561610-0').addService(googletag.pubads());
+});
+//END - Boom Box 1
+
+    //-->
+</script>
+<script type="text&#x2F;javascript"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Boombox 2
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/Boombox2', [[300, 600], [300, 250]], 'div-gpt-ad-1634585760642-0').addService(googletag.pubads());
+});
+
+//END - Boombox 2
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Boom Box 3
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/Boombox3', [300, 250], 'div-gpt-ad-1381242337829-0').addService(googletag.pubads());
+});
+
+//END - Boom Box 3
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Boombox 4
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/Boombox4', [300, 250], 'div-gpt-ad-1375282707343-0').addService(googletag.pubads());
+});
+
+//END - Boombox 4
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Top Leaderboard
+googletag.cmd.push(function() {
+googletag.defineSlot('/21169631/Leaderboard_728_90', [728, 90], 'div-gpt-ad-1375106690564-0').addService(googletag.pubads());
+});
+//END - Top Leaderboard
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Wallpaper (Responsive)
+googletag.cmd.push(function() {
+var spotlightMapping = googletag.sizeMapping()
+    .addSize([991,10], [1, 1])
+    .addSize([0,0], [300, 100])
+    .build();
+googletag.defineSlot('/21169631/Wallpaper_Responsive', [[1, 1], [300, 100]], 'div-gpt-ad-1545057793425-0')
+.defineSizeMapping(spotlightMapping)
+.addService(googletag.pubads());
+});
+
+//END - Wallpaper (Responsive)
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    //Leaderboard_Mobile-Pinned
+googletag.cmd.push(function() {
+ googletag.defineSlot('/21169631/Leaderboard_Mobile-Pinned', [300, 100], 'div-gpt-ad-1664269244415-0').addService(googletag.pubads());
+});
+
+//END - Leaderboard_Mobile-Pinned
+
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+            googletag.cmd.push(function() {
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P8L8QN');
+    //-->
+</script>
+<script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;cryptico&#x2F;0.0.1343522940&#x2F;cryptico.js"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+            eval(cryptico.decrypt('CQl0MJVUX6M026fNrzrNO/9S+S9NeJuHxnOtXg57a/W9rGv+po/eYkhrQlw7p1C5KN4FRM8ZjWLxaTsynBuCjKerAoiP91kUO/ly6vl8LsDb/FgPJnZZvjwCw0mrOtP/OkhiOvaFHnQpBHJ1y6q17tzykSFsCp3rK9xoJbhy5bU=?hN8qxiM4GM398lgBpvsbWWyahk7Rr79EVJClrAZyxUNq7ECsJgYe/eioQQbq0KXpVj2jsEm0Fo/lDNbXuhZAHr9yNSfXPmljxqOV4JxGl20qKhii7D6EDV2oHj2vYCBnC/BCIlHRMZuuWD6S7Vxq/oWi7Au6Vp/+ILNtIM3W5cRHOjMOn2u6LHRvndlaV2BoXWYAhgF4zi6fl1/vqMy9+m+CXH2QlPoUKi380vuElzKH42MyufTMIR63x3BMdBHScMhlVp3bqIYLtp1RDzmp5IRko6Mtl4LdkpCZgH8w/FiEe3b0R65QVZniVQavQGmYPL6gkSEBXiLqbkDLI3KlntnDtt3HtlPrvEGR6NpYN2HMSmSMDbFvtChrMHhHULi6u/vHVlIMDzqcIpOa1FbI1w1KVjyLXT9WAAq3rwwKJAZbiq0Wyjg4IlfHhVW604l26IOQ0p0uLMfjwY4LlyLkpQ==', cryptico.generateRSAKey('a1affb48-6614-4390-a901-73e2d78e559b', 1024)).plaintext);
+    //-->
+</script>
+<script type="text&#x2F;javascript" src="https&#x3A;&#x2F;&#x2F;news.google.com&#x2F;swg&#x2F;js&#x2F;v1&#x2F;swg-basic.js"></script>
+<script type="text&#x2F;javascript">
+    //<!--
+            (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
+            basicSubscriptions.init({
+                type: "NewsArticle",
+                isPartOfType: ["Product"],
+                isPartOfProductId: "CAowqdSpCw:openaccess",
+                clientOptions: { theme: "light", lang: "en-GB" },
+            });
+        });
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    /js/adblock-recovery-error-protection.min.js
+    //-->
+</script>    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+    o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+    o.onload=function(){window.trackingFunctions.onLoad({appId:"663210259d8ca302e806e63a"})},
+    document.head.appendChild(o)}initApollo();</script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=504537453531555&autoLogAppEvents=1"></script>
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-3182119574047549?ers=1" nonce="EjVvmOLFHwJs4lmuWxLlWg"></script><script nonce="EjVvmOLFHwJs4lmuWxLlWg">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8L8QN" height="0" width="0" style="display:none; visibility:hidden;"></iframe>
+    </noscript>
+    <div id="wrapper-container">
+        <div class='advert advert-wallpaper' data-advertname='Wallpaper (Responsive)'><!-- /21169631/Wallpaper_Responsive -->
+<div id='div-gpt-ad-1545057793425-0'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1545057793425-0'); });
+</script>
+</div></div>        <div id="background"></div>
+        <div id="wrapper" class="page mx-auto">
+            <div class="container-fluid p-0 overflow-hidden">
+<div class="alert alert-danger alert-dismissible fade show m-2" role="alert" id="zWTnqlQPBSdU" style="display:none;">
+  Our website is made possible by displaying online advertisements to our visitors. Please consider supporting us by disabling your ad blocker.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="dismiss-ad-blocker-notice">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<script src="/peel1.js" type="text/javascript"></script>
+                <div id="nav-top" class="bg-primary py-1 d-print-none">
+                    <nav class="navbar navbar-dark py-0 d-none d-md-flex">
+                            <div class="btn-toolbar">
+            <div class="btn-group mr-2">
+            <a class="btn btn-sm btn-outline-light" href="/user/login" data-toggle="modal" data-target="#loginModal">
+                Login            </a>
+        </div>
+                <div class="btn-group mr-2">
+            <a class="btn btn-sm btn-outline-light" href="/user/register">
+                Register            </a>
+        </div>
+            <div class="btn-group mr-2">
+            <a class="btn btn-sm btn-outline-light" href="/pages/media-kit">Advertise</a>
+        </div>
+    </div>
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-2 py-0" href="https://www.linkedin.com/company/electronic-specifier-ltd/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-2 py-0" href="https://twitter.com/electronicspec" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-2 py-0" href="https://www.facebook.com/ElectronicSpecifier" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-2 py-0" href="https://www.youtube.com/channel/UCloJCyWMLtZl2WxdW_sanRQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white px-2 py-0" href="https://www.instagram.com/electronic_specifier" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-4">
+                        <a href="/">
+                            <img alt="Majorana 1: Microsoft’s new quantum chip" title="Majorana 1: Microsoft’s new quantum chip" src="/img/ES COLOUR RGB.svg" class="img-fluid" style="max-height: 136px;" />
+                        </a>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-8">
+                        <div class='advert advert-top-leaderboard' data-advertname='Top Leaderboard'><!-- Leaderboard_728_90 -->
+<div id='div-gpt-ad-1375106690564-0' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1375106690564-0'); });
+</script>
+</div></div>                    </div>
+                </div>
+
+                <nav id="nav-main" class="navbar navbar-expand-md navbar-dark bg-secondary p-0">
+                    <button class="navbar-toggler border-0 py-4 collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i> Menu
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <form class="form-inline m-2 my-lg-0 d-block d-md-none" action="/search">
+                            <div class="input-group">
+                                <input class="form-control bg-senary border-0 pl-3" name="query" type="search" placeholder="Search" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-sm bg-senary text-white" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+
+                                    <ul class="navbar-nav">
+                                                            <li class="nav-item active dropdown dropdown-hover">
+                    <a href="/products/" class="nav-link py-4 px-3 dropdown-toggle">
+                        Products                        <i class="fa fa-caret-down text-right"></i>                    </a>
+                                            <div class="dropdown-menu bg-quinary py-5">
+                            <div class="row w-100">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <nav class="nav flex-column">
+                                                                                                                            <a href="/products/3d-printing/" class="nav-item nav-link px-2 border-3d-printing" >
+                                                3D Printing                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/5g/" class="nav-item nav-link px-2 border-5g" >
+                                                5G/6G                                                           <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/artificial-intelligence/" class="nav-item nav-link px-2 border-artificial-intelligence" >
+                                                AI                                                   <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/boards-and-backplanes/" class="nav-item nav-link px-2 border-boards-and-backplanes" >
+                                                Boards/Backplanes                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/cables-and-connecting/" class="nav-item nav-link px-2 border-cables-and-connecting" >
+                                                Cables/Connecting                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/communications/" class="nav-item nav-link px-2 border-communications" >
+                                                Communications                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/component-management/" class="nav-item nav-link px-2 border-component-management" >
+                                                Component Management                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/cyber-security/" class="nav-item nav-link px-2 border-cyber-security" >
+                                                Cyber Security                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/design-automation/" class="nav-item nav-link px-2 border-design-automation" >
+                                                Design                                                 <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/displays/" class="nav-item nav-link px-2 border-displays" >
+                                                Displays                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/e-mech/" class="nav-item nav-link px-2 border-e-mech" >
+                                                E-mech                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/cabinets-and-enclosures/" class="nav-item nav-link px-2 border-cabinets-and-enclosures" >
+                                                Enclosures                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/fpgas/" class="nav-item nav-link px-2 border-fpgas" >
+                                                FPGAs                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/frequency-control/" class="nav-item nav-link px-2 border-frequency-control" >
+                                                Frequency                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/iot/" class="nav-item nav-link px-2 border-iot" >
+                                                Internet of Things                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                    </nav></div><div class="col-12 col-sm-6 col-md-4"><nav class="nav flex-column">                                                                                    <a href="/products/memory/" class="nav-item nav-link px-2 border-memory" >
+                                                Memory                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/metaverse-1/" class="nav-item nav-link px-2 border-metaverse-1" >
+                                                Metaverse                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/micros/" class="nav-item nav-link px-2 border-micros" >
+                                                Micros                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/mixed-signal-analog/" class="nav-item nav-link px-2 border-mixed-signal-analog" >
+                                                Mixed Signal/Analog                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/optoelectronics/" class="nav-item nav-link px-2 border-optoelectronics" >
+                                                Optoelectronics                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/passives/" class="nav-item nav-link px-2 border-passives" >
+                                                Passives                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/power/" class="nav-item nav-link px-2 border-power" >
+                                                Power                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/quantum/" class="nav-item nav-link px-2 border-quantum" >
+                                                Quantum                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/renewables/" class="nav-item nav-link px-2 border-renewables" >
+                                                Renewables                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/sensors/" class="nav-item nav-link px-2 border-sensors" >
+                                                Sensors                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/test-and-measurement/" class="nav-item nav-link px-2 border-test-and-measurement" >
+                                                T & M                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/tools/" class="nav-item nav-link px-2 border-tools" >
+                                                Tools                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/vr-ar/" class="nav-item nav-link px-2 border-vr-ar" >
+                                                VR/AR                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/products/wearables/" class="nav-item nav-link px-2 border-wearables" >
+                                                Wearables                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                </nav>
+                                </div>
+                                                            </div>
+                        </div>
+                                    </li>
+                                                            <li class="nav-item  dropdown dropdown-hover">
+                    <a href="/industries/" class="nav-link py-4 px-3 dropdown-toggle">
+                        Industries                        <i class="fa fa-caret-down text-right"></i>                    </a>
+                                            <div class="dropdown-menu bg-quinary py-5">
+                            <div class="row w-100">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <nav class="nav flex-column">
+                                                                                                                            <a href="/industries/aerospace-defence/" class="nav-item nav-link px-2 border-aerospace-defence" >
+                                                Aerospace & Defence                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/automotive/" class="nav-item nav-link px-2 border-automotive" >
+                                                Automotive                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/alternative-energy/" class="nav-item nav-link px-2 border-alternative-energy" >
+                                                Eco Innovation                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/industrial/" class="nav-item nav-link px-2 border-industrial" >
+                                                Industrial                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/lighting/" class="nav-item nav-link px-2 border-lighting" >
+                                                Lighting                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                    </nav></div><div class="col-12 col-sm-6 col-md-4"><nav class="nav flex-column">                                                                                    <a href="/industries/medical/" class="nav-item nav-link px-2 border-medical" >
+                                                Medical                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/production/" class="nav-item nav-link px-2 border-production" >
+                                                Production                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/robotics/" class="nav-item nav-link px-2 border-robotics" >
+                                                Robotics                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/security/" class="nav-item nav-link px-2 border-security" >
+                                                Security                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/industries/wireless/" class="nav-item nav-link px-2 border-wireless" >
+                                                Wireless                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                </nav>
+                                </div>
+                                                            </div>
+                        </div>
+                                    </li>
+                                                            <li class="nav-item  dropdown dropdown-hover">
+                    <a href="/news/" class="nav-link py-4 px-3 dropdown-toggle">
+                        News & Analysis                        <i class="fa fa-caret-down text-right"></i>                    </a>
+                                            <div class="dropdown-menu bg-quinary py-5">
+                            <div class="row w-100">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <nav class="nav flex-column">
+                                                                                                                            <a href="/news/analysis/" class="nav-item nav-link px-2 border-analysis" >
+                                                Analysis                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/appointments/" class="nav-item nav-link px-2 border-appointments" >
+                                                Appointments                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/awards/" class="nav-item nav-link px-2 border-awards" >
+                                                Awards                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/blog/" class="nav-item nav-link px-2 border-blog" >
+                                                Blog                                                 <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/events-news/" class="nav-item nav-link px-2 border-events-news" >
+                                                Events                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/latest/" class="nav-item nav-link px-2 border-latest" >
+                                                Latest                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                    </nav></div><div class="col-12 col-sm-6 col-md-4"><nav class="nav flex-column">                                                                                    <a href="/news/podcasts/" class="nav-item nav-link px-2 border-podcasts" >
+                                                Podcasts                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/stem/" class="nav-item nav-link px-2 border-stem" >
+                                                STEM News                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/tech-videos/" class="nav-item nav-link px-2 border-tech-videos" >
+                                                Tech Videos                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/webinars/" class="nav-item nav-link px-2 border-webinars" >
+                                                Webinars                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="/news/women-in-tech/" class="nav-item nav-link px-2 border-women-in-tech" >
+                                                Women in Tech                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                </nav>
+                                </div>
+                                                            </div>
+                        </div>
+                                    </li>
+                                                            <li class="nav-item  ">
+                    <a href="/events" class="nav-link py-4 px-3 ">
+                        Industry Events                                            </a>
+                                    </li>
+                                                            <li class="nav-item  dropdown dropdown-hover">
+                    <a href="/product-centre/" class="nav-link py-4 px-3 dropdown-toggle">
+                        Resource Centres                        <i class="fa fa-caret-down text-right"></i>                    </a>
+                                            <div class="dropdown-menu bg-quinary py-5">
+                            <div class="row w-100">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <nav class="nav flex-column">
+                                                                                                                            <a href="/product-centre/manufacturers/texas-instruments/home/" class="nav-item nav-link px-2 border-home" >
+                                                TI Resource Centre                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                            <a href="/product-centre/manufacturers/texas-instruments/home/" class="nav-item nav-link px-2 border-home" >
+                                                        Welcome                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/manufacturers/texas-instruments/" class="nav-item nav-link px-2 border-texas-instruments" >
+                                                        Product Catalogue                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/manufacturers/texas-instruments/featured-products/" class="nav-item nav-link px-2 border-featured-products" >
+                                                        Featured Products                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/manufacturers/texas-instruments/reference-designs/" class="nav-item nav-link px-2 border-reference-designs" >
+                                                        Reference Designs                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/manufacturers/texas-instruments/application-notes/" class="nav-item nav-link px-2 border-application-notes" >
+                                                        Application Notes                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/manufacturers/texas-instruments/evaluation-kits/" class="nav-item nav-link px-2 border-evaluation-kits" >
+                                                        Evaluation Kits                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="https://training.ti.com/" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                        Tech Videos&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.ti.com/design-resources/embedded-development.html" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                        Development Tools&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="https://e2e.ti.com/" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                        TI E2E™ Support Forums&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                            </nav></div><div class="col-12 col-sm-6 col-md-4"><nav class="nav flex-column">                                                                                    <a href="/product-centre/distributors/digi-key/home/" class="nav-item nav-link px-2 border-home" >
+                                                DigiKey Resource Centre                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                            <a href="/product-centre/distributors/digi-key/home/" class="nav-item nav-link px-2 border-home" >
+                                                        Welcome                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/distributors/digi-key/" class="nav-item nav-link px-2 border-digi-key" >
+                                                        Product Catalogue                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="/product-centre/distributors/digi-key/featured-products/" class="nav-item nav-link px-2 border-featured-products" >
+                                                        Featured Products                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.digikey.com/en/product-highlight" class="nav-item nav-link px-2 border-" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;New Products&quot;]" >
+                                                        New Products&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.digikey.com/en/news/press-releases" class="nav-item nav-link px-2 border-" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Press Releases&quot;]" >
+                                                        Press Releases&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.digikey.com/en/articles/techzone" class="nav-item nav-link px-2 border-" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Articles&quot;]" >
+                                                        Articles&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.digikey.com/en/ptm" class="nav-item nav-link px-2 border-" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Product Training&quot;]" >
+                                                        Product Training&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                    <a href="http://www.digikey.com/en/blog" class="nav-item nav-link px-2 border-" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Blog&quot;]" >
+                                                        Blog&nbsp;<span class="fa fa-external-link-alt"></span>                                                        <i class="fa fa-caret-right"></i>
+                                                    </a>
+                                                                                                                                                                        </nav>
+                                </div>
+                                                            </div>
+                        </div>
+                                    </li>
+                                                            <li class="nav-item  dropdown dropdown-hover">
+                    <a href="/" class="nav-link py-4 px-3 dropdown-toggle">
+                        ES Network                        <i class="fa fa-caret-down text-right"></i>                    </a>
+                                            <div class="dropdown-menu bg-quinary py-5">
+                            <div class="row w-100">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <nav class="nav flex-column">
+                                                                                                                            <a href="https://www.engineeringspecifier.com?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                Engineering                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="https://www.student-circuit.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                Student Circuit                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="https://www.electronicsdatasheets.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                Electronics Datasheets                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                    </nav></div><div class="col-12 col-sm-6 col-md-4"><nav class="nav flex-column">                                                                                    <a href="https://www.edinventory.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                ED Inventory                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                        <a href="https://www.iotinsider.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" class="nav-item nav-link px-2 border-" target="_blank" >
+                                                IoT Insider                                                <i class="fa fa-caret-right"></i>
+                                            </a>
+                                                                                                                                                                </nav>
+                                </div>
+                                                            </div>
+                        </div>
+                                    </li>
+                    </ul>
+                            <form class="form-inline m-2 my-lg-0 d-none d-md-block" action="/search">
+                            <div class="input-group">
+                                <input class="form-control bg-senary border-0 pl-3" name="query" type="search" placeholder="Search" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-sm bg-senary text-white" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </nav>
+
+                <div id="content">
+                                        <div class="row">
+    <div class="col col-content">
+        <div class="mx-2 ml-lg-4">
+            <div class="breadcrumbs small">
+    
+    <a href="/">Home</a> &gt;
+    <a href="&#x2F;products&#x2F;">Products</a> &gt; Majorana 1: Microsoft’s new quantum chip</div>
+            <div class="badge badge-quantum d-print-none">Quantum Tech</div>
+                        <h1 class="mb-4">Majorana 1: Microsoft’s new quantum chip</h1>
+        </div>
+
+        <div class="position-relative mr-2 mr-lg-0 mb-4">
+                            <div class="position-absolute rounded-right bg-light w-100 h-50" style="bottom:0;"></div>
+                <div class="mx-2 ml-lg-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-4 d-print-none">
+                                                            <div class="mx-4 mx-sm-0">
+                                    <div class="card-img-bg" style="width: 100%; height: 380px; background-image:url('/cms/images/single/majorana1article.png')"></div>
+                                </div>
+                                                    </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="h-100 d-flex flex-column d-sm-block mb-3 mb-sm-0">
+                                <div class="h-sm-50 d-sm-flex align-items-sm-center mb-3 mb-sm-0">
+                                                                    </div>
+                                <div class="h-sm-50 align-items-sm-center pt-6">
+                                                                            <div class="d-flex flex-column">
+                                            <div class="mb-2">
+    <i class="fa fa-calendar"></i> 20th February 2025</div>
+
+    <div class="mb-2">
+        <i class="fa fa-briefcase"></i>
+        <a href="/companies/electronic-specifier" title="View /companies/electronic-specifier">Electronic Specifier</a>    </div>
+
+    <div class="mb-2">
+        <i class="fa fa-user"></i><span> Harry Fowle </span>
+    </div>
+
+<div class="icon-container">
+    <div class="mb-2">
+        <i class="fa fa-thumbs-up like-btn" style="color:#2396D7;" data-id="67b7142cc8960854f06fa5bd"></i>
+        <span class="likes">
+            2        </span>
+
+        <i class="fa fa-thumbs-down dislike-btn" style="color:#cc0000;" data-id="67b7142cc8960854f06fa5bd"></i>
+        <span class="dislikes">
+            0        </span>
+    </div>
+</div>                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+        <div class="mx-2 ml-lg-4 mb-4">
+            <div class="font-weight-bold"><p><a href="https://www.electronicspecifier.com/companies/microsoft" target="_blank">Microsoft</a> has unveiled Majorana 1, a quantum chip that promises a significant leap forward in the development of large-scale, fault-tolerant quantum computing. The company claims that this breakthrough could accelerate the arrival of practical quantum computers from decades to just a few years - a stark contrast to <a href="https://www.electronicspecifier.com/quantum/nvidia-ceo-causes-quantum-stocks-and-confidence-to-tumble" target="_blank">the words of NVIDIA's CEO earlier this year</a>.</p></div>
+            <h3>What is Majorana 1?</h3>
+<p>Majorana 1 is Microsoft's first Quantum Processing Unit (QPU) powered by a topological core, an entirely new approach to <a href="https://www.electronicspecifier.com/products/quantum/quantum-computing-the-whats-whens-and-hows" target="_blank">quantum computing</a>. The chip is built using a novel material known as a &lsquo;topoconductor,&rsquo; which enables the creation of stable and scalable topological qubits. Unlike traditional quantum computing approaches that rely on highly fragile qubits, Microsoft's design is intended to be less prone to errors and more resistant to environmental noise.</p><div class='advert advert-in-content' data-advertname='InContent_Boombox_AI'><!-- /21169631/InContent_Boombox_AI -->
+<div id='div-gpt-ad-1511869493417-0'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1511869493417-0'); });
+</script>
+</div></div>
+<p>Microsoft claims that Majorana 1 has the potential to scale up to one million qubits on a single chip, a milestone that would bring quantum computing significantly closer to commercial reality. This is a stark contrast to current quantum processors, which typically operate with fewer than 100 qubits and struggle with error correction.</p>
+<p>Satya Nadella, CEO of Microsoft, emphasised the significance of this development, stating: "Majorana 1 represents a fundamental shift in quantum computing. With this breakthrough, we are not just making incremental progress; we are laying the groundwork for a future where quantum computing becomes a practical reality in the near term."</p>
+<h3>The magic behind Majorana 1</h3>
+<p>At the heart of the chip is a superconducting nanowire made from indium arsenide and aluminium. This material combination enables the formation of Majorana zero modes, a theoretical particle that was first proposed in the 1930s but has been notoriously difficult to demonstrate experimentally.</p>
+<p>Microsoft's topoconductors allow the creation and manipulation of Majorana zero modes, forming the basis for topological qubits. These qubits are distinct from traditional superconducting qubits (such as those used by Google and IBM) because they are inherently protected from certain types of errors, making them more stable and reliable.</p>
+<p>Unlike standard quantum computing methods, which require thousands of physical qubits to create a single logical qubit, topological qubits naturally resist errors, reducing the overhead for quantum error correction. Microsoft has also developed a novel readout system that reportedly achieves 99% accuracy in qubit state detection.</p>
+<p>Chetan Nayak, Corporate Vice President of Quantum Hardware at Microsoft, explained: "Majorana 1 is built on nearly two decades of research and development. By leveraging topoconductors, we have developed a quantum chip that is not only scalable but also inherently robust against errors&mdash;an essential step toward building a fault-tolerant quantum computer."</p>
+<h3>How does it compare to its rivals at Google and IBM?</h3>
+<p>Microsoft&rsquo;s announcement comes at a time when Google and IBM are also making significant advancements in quantum computing. In late 2024, <a href="https://www.electronicspecifier.com/products/quantum/what-s-the-deal-with-google-s-quantum-chip" target="_blank">Google unveiled its "Willow" quantum chip</a>, which demonstrated quantum supremacy by solving complex calculations in minutes that would take classical supercomputers thousands of years. IBM, meanwhile, has projected that large-scale quantum computing will be commercially viable by 2033.</p>
+<p>Microsoft, however, believes it can achieve fault-tolerant quantum computing much sooner, stating that its approach could bring quantum breakthroughs "in years, not decades." If successful, this would place Microsoft ahead in the race to develop a scalable quantum computer.</p>
+<h3>Applications of Majorana 1</h3>
+<p>Microsoft envisions Majorana 1 unlocking solutions for some of the world's most challenging problems, including:</p>
+<ul>
+<li>Drug discovery &ndash; Accelerating the identification of new medicines by simulating molecular interactions with unprecedented accuracy</li>
+<li>AI optimisation &ndash; Enhancing artificial intelligence models by enabling massive parallel computation beyond classical limits</li>
+<li>Climate science &ndash; Helping researchers find ways to break down microplastics in the ocean and develop self-healing materials for infrastructure</li>
+<li>Financial modelling &ndash; Optimising complex economic simulations for risk assessment and market predictions</li>
+</ul>
+<p>Paul Stevenson, Professor of Physics at the University of Surrey, offered a cautious perspective, stating: "While Majorana 1 is an exciting advancement, the path to scalable and practical quantum computing remains complex. Independent verification and further experimental validation will be critical to confirming Microsoft's claims."</p>
+<h3>Microsoft&rsquo;s collaboration with DARPA and the road ahead</h3>
+<p>Microsoft has partnered with DARPA (Defense Advanced Research Projects Agency) as part of its "Utility-Scale Quantum Computing" initiative. The company has committed to building a fault-tolerant quantum prototype in the coming years, further solidifying its role as a leader in quantum research.</p>
+<p>According to Chetan Nayak, Microsoft&rsquo;s Corporate Vice President of Quantum Hardware, the company has been working on this technology for nearly two decades. The research leading to Majorana 1 has been peer-reviewed and published in Nature, giving credibility to Microsoft&rsquo;s claims.</p>
+<p>DARPA selected Microsoft and PsiQuantum to progress to the final phase of its Underexplored Systems for Utility-Scale Quantum Computing (US2QC) program. This initiative, part of DARPA's broader Quantum Benchmarking Initiative (QBI), aims to evaluate and validate innovative approaches to building utility-scale quantum computers.</p>
+<p>As part of the US2QC program's Validation and Co-Design phase, Microsoft will work closely with DARPA's evaluation team to refine and validate their quantum computing design. This collaboration involves rigorous testing of components and hardware, as well as assessments of system-level performance capabilities of major prototypes. The goal is to demonstrate the feasibility of constructing a utility-scale quantum computer that can address real-world challenges.</p>
+<h3>Scepticisms &amp; final thoughts</h3>
+<p>Despite the excitement surrounding Majorana 1, some experts remain cautious. Majorana zero modes have been a topic of scientific controversy, and Microsoft previously faced scrutiny when it retracted a 2018 paper claiming experimental evidence of these particles.</p>
+<p>While Microsoft's approach appears promising and its inclusion in <em>Nature</em> a good sign, independent verification of its claims will be critical. Some physicists argue that additional experimental validation is needed to confirm that Majorana 1 truly contains Majorana zero modes and is not producing false signals from other quasiparticles.</p>
+<p>Microsoft&rsquo;s Majorana 1 quantum chip is one of the most ambitious attempts yet to bridge the gap between theoretical quantum physics and practical quantum computing. If the company&rsquo;s claims hold up to further scrutiny, this could be the beginning of a new era in computing &ndash; one where quantum processors solve problems far beyond the reach of classical machines.</p>
+<p>With its roadmap leading to fault-tolerant, million-qubit quantum systems, Microsoft is staking its claim in the future of computing. Whether it can deliver on this vision remains to be seen, but one thing is certain: the quantum race is heating up, and Microsoft has just made a bold move to take the lead.</p>        </div>
+                    <div class="videoEmbed text-center mx-2 ml-lg-4 mb-4">
+                            </div>
+        
+                <div class="row ml-4 mb-4 d-print-none">
+            <div class="col-12">
+                <div class="fb-comments" data-href="https://www.electronicspecifier.com/products/quantum/majorana-1-microsoft-s-new-quantum-chip" data-width="768" data-numposts="5"></div>
+            </div>
+        </div>
+        
+            </div>
+    <div id="right-col" class="col col-sidebar d-print-none">
+    <div class="mt-4 mx-2 ml-lg-0 mr-lg-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 d-none d-lg-block">
+                <select id="category-select" class="form-control bg-light px-3">
+    <option>Selected: Quantum Tech</option>
+            <option value="/products/3d-printing/">3D Printing</option>
+            <option value="/products/5g/">5G/6G</option>
+            <option value="/products/artificial-intelligence/">Artificial Intelligence</option>
+            <option value="/products/boards-and-backplanes/">Boards/Backplanes</option>
+            <option value="/products/cables-and-connecting/">Cables/Connecting</option>
+            <option value="/products/communications/">Communications</option>
+            <option value="/products/component-management/">Component Management</option>
+            <option value="/products/cyber-security/">Cyber Security</option>
+            <option value="/products/design-automation/">Design </option>
+            <option value="/products/displays/">Displays</option>
+            <option value="/products/e-mech/">E-mech</option>
+            <option value="/products/cabinets-and-enclosures/">Enclosures</option>
+            <option value="/products/fpgas/">FPGAs</option>
+            <option value="/products/frequency-control/">Frequency</option>
+            <option value="/products/iot/">IoT</option>
+            <option value="/products/memory/">Memory</option>
+            <option value="/products/metaverse-1/">Metaverse</option>
+            <option value="/products/micros/">Micros</option>
+            <option value="/products/mixed-signal-analog/">Mixed Signal/Analog</option>
+            <option value="/products/optoelectronics/">Optoelectronics</option>
+            <option value="/products/passives/">Passives</option>
+            <option value="/products/power/">Power</option>
+            <option value="/products/renewables/">Renewables</option>
+            <option value="/products/sensors/">Sensors</option>
+            <option value="/products/test-and-measurement/">Test & Measurement</option>
+            <option value="/products/tools/">Tools</option>
+            <option value="/products/vr-ar/">VR/AR</option>
+            <option value="/products/wearables/">Wearables</option>
+    </select>            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 mb-xl-0 text-center">
+                <div class="d-block d-xl-none">
+                    <div class='advert advert-leaderboard-fallback' data-advertname='Leaderboard Backup'><!-- /21169631/Leaderboard_300x100 -->
+<div id='div-gpt-ad-1490194999394-0' style='height:100px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490194999394-0'); });
+</script>
+</div></div>                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 text-center">
+                <div class='advert advert-boombox-1' data-advertname='Boom Box 1'><!-- /21169631/BoomBox -->
+<div id='div-gpt-ad-1625482561610-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1625482561610-0'); });
+  </script>
+</div></div>            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12">
+                <div class="card shadow bg-light border-0 mb-4 mx-auto" style="width:300px; background: url('/build/images/dk-widget-bg.4ddf41e1.png') no-repeat center">
+    <div class="card-header text-white text-center p-1">
+        <img class="my-2" src="/build/images/dk-logo-rgb.35e9e5ea.png" />
+        <h4 class="mb-1"><strong>Product Spotlight</strong></h4>
+    </div>
+    <div class="card-body h-100 text-white px-2 pt-2 pb-0 -mb-2 -mb-2">
+        <div class="owl-carousel owl-theme owl-dots-digi-key owl-dots-left" data-dots="true" data-items="1">
+                        <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>R30-3002002</h6>
+                        </a>
+                        <h4><strong>Harwin</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="//uk.farnell.com/productimages/standard/en_US/4264777.jpg" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><h3>20.00mm M3 Metric M/F Threaded Hex Brass Spacer/Pillar</h3>
+<h3>Hardware - ...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>952-1510-ND</td></tr>
+                        <tr><th>Stock:</th><td>8245</td></tr>
+                        <tr><th>Cost:</th><td>$0.76</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/5363dc78e34e24b501ce0a1b" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>NRF54L15-QFAA-R</h6>
+                        </a>
+                        <h4><strong>Nordic Semiconductor</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/NRF54L15-QFAA-R.jpg" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>RF System on a Chip - SoC Ultra-low power Bluetooth Multiprotocol 5.4 SoC Sys...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>4823-NRF54L15-QFAA-RTR-ND</td></tr>
+                        <tr><th>Stock:</th><td>0</td></tr>
+                        <tr><th>Cost:</th><td>$2.39</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/67c5c13d5a8ec940398b456c" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>STDRIVEG611Q</h6>
+                        </a>
+                        <h4><strong>STMicroelectronics</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/STDRIVEG611Q.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Gate Drivers High voltage and high-speed half-bridge gate driver for GaN powe...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>497-STDRIVEG611Q-ND</td></tr>
+                        <tr><th>Stock:</th><td>300</td></tr>
+                        <tr><th>Cost:</th><td>$2.63</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/6764240a5a8ec9105d8b4569" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>TBF10SL-4PS-B</h6>
+                        </a>
+                        <h4><strong>ITT Interconnect Solutions</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/ITT_Cannon.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Circular Connector Standard 5/2 Female Sockets/Male Pins Panel Mount</p>
+<h2...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>1003-TBF10SL-4PS-B-ND</td></tr>
+                        <tr><th>Stock:</th><td>50</td></tr>
+                        <tr><th>Cost:</th><td>$44.29</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/618c57f76e851a6121514598" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>CAA572C0G3A663J640LJ</h6>
+                        </a>
+                        <h4><strong>TDK Corporation</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/CAA572C0G3A663J640LJ.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Speciality Ceramic Capacitors Inline MEGA Cap,2220,C0G,1000V,66nF,+/-5%,6.4mm...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>445-CAA572C0G3A663J640LJDKR-ND</td></tr>
+                        <tr><th>Stock:</th><td>1037</td></tr>
+                        <tr><th>Cost:</th><td>$9.16</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/66ef38d0ee3f178f359f45a3" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+    </div>
+    <div class="card-footer border-top-0">
+    </div>
+</div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 text-center">
+                <div class='advert advert-boombox-2' data-advertname='Boombox 2'><!-- /21169631/Boombox2 -->
+<div id='div-gpt-ad-1634585760642-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1634585760642-0'); });
+  </script>
+</div></div>            </div>
+            <div class="col-12 col-sm-6 col-lg-12 mb-4">
+                <div class="card bg-light mb-4 border-0">
+                    <div class="card-header">
+                        <h5>
+                            <a href="/tech-videos/" class="text-black">
+                                Tech Videos                            </a>
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                                                                                        <iframe id="ytplayer" type="text/html" src="//www.youtube.com/embed/SK_XKLx_X6o?wmode=opaque" frameborder="0" allowfullscreen="allowfullscreen" style="width:100%;height:182px;max-height:240px;min-height:200px;max-width:100%;"></iframe>
+                                                                        </div>
+                    <div class="card-footer">
+                        <a href="/tech-videos/" class="btn btn-sm btn-primary">
+                            Read more                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 text-center">
+                <div class='advert advert-boombox-3' data-advertname='Boom Box 3'><!-- Boombox3 -->
+<div id='div-gpt-ad-1381242337829-0' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1381242337829-0'); });
+</script>
+</div></div>            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12">
+                <div class="card shadow bg-light border-0 mb-4 mx-auto" style="width:300px; background: url('/build/images/dk-widget-bg.4ddf41e1.png') no-repeat center">
+    <div class="card-header text-white text-center p-1">
+        <img class="my-2" src="/build/images/dk-logo-rgb.35e9e5ea.png" />
+        <h4 class="mb-1"><strong>Product Spotlight</strong></h4>
+    </div>
+    <div class="card-body h-100 text-white px-2 pt-2 pb-0 -mb-2 -mb-2">
+        <div class="owl-carousel owl-theme owl-dots-digi-key owl-dots-left" data-dots="true" data-items="1">
+                        <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>R30-3002002</h6>
+                        </a>
+                        <h4><strong>Harwin</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="//uk.farnell.com/productimages/standard/en_US/4264777.jpg" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><h3>20.00mm M3 Metric M/F Threaded Hex Brass Spacer/Pillar</h3>
+<h3>Hardware - ...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>952-1510-ND</td></tr>
+                        <tr><th>Stock:</th><td>8245</td></tr>
+                        <tr><th>Cost:</th><td>$0.76</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/harwin-inc/R30-3002002/2264491?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/5363dc78e34e24b501ce0a1b" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>NRF54L15-QFAA-R</h6>
+                        </a>
+                        <h4><strong>Nordic Semiconductor</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/NRF54L15-QFAA-R.jpg" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>RF System on a Chip - SoC Ultra-low power Bluetooth Multiprotocol 5.4 SoC Sys...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>4823-NRF54L15-QFAA-RTR-ND</td></tr>
+                        <tr><th>Stock:</th><td>0</td></tr>
+                        <tr><th>Cost:</th><td>$2.39</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/nordic-semiconductor-asa/NRF54L15-QFAA-R/24773448?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/67c5c13d5a8ec940398b456c" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>STDRIVEG611Q</h6>
+                        </a>
+                        <h4><strong>STMicroelectronics</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/STDRIVEG611Q.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Gate Drivers High voltage and high-speed half-bridge gate driver for GaN powe...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>497-STDRIVEG611Q-ND</td></tr>
+                        <tr><th>Stock:</th><td>300</td></tr>
+                        <tr><th>Cost:</th><td>$2.63</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/stmicroelectronics/STDRIVEG611Q/25675980?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/6764240a5a8ec9105d8b4569" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>TBF10SL-4PS-B</h6>
+                        </a>
+                        <h4><strong>ITT Interconnect Solutions</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/ITT_Cannon.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Circular Connector Standard 5/2 Female Sockets/Male Pins Panel Mount</p>
+<h2...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>1003-TBF10SL-4PS-B-ND</td></tr>
+                        <tr><th>Stock:</th><td>50</td></tr>
+                        <tr><th>Cost:</th><td>$44.29</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/itt-cannon-llc/TBF10SL-4PS-B/20525161?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/618c57f76e851a6121514598" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                                <div>
+                    <div class="card-title font-weight-bold text-center">
+                        <a class="text-white" href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <h6>CAA572C0G3A663J640LJ</h6>
+                        </a>
+                        <h4><strong>TDK Corporation</strong></h4>                    </div>
+                    <div class="mb-2">
+                        <a class="text-center d-block bg-white rounded w-100 py-2 mb-2" href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank">
+                            <img class="img-fluid mx-auto"  src="https://www.electronicsdatasheets.com/img/part/CAA572C0G3A663J640LJ.png" style="width: auto; max-height:120px;" />
+                        </a>
+                        <div class="mx-1"><small><p>Speciality Ceramic Capacitors Inline MEGA Cap,2220,C0G,1000V,66nF,+/-5%,6.4mm...</small></div>                    </div>
+                    <table class="table table-sm table-borderless small text-white">
+                        <tbody>
+                        <tr><th>SKU:</th><td>445-CAA572C0G3A663J640LJDKR-ND</td></tr>
+                        <tr><th>Stock:</th><td>1037</td></tr>
+                        <tr><th>Cost:</th><td>$9.16</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://www.digikey.co.uk/en/products/detail/tdk-corporation/CAA572C0G3A663J640LJ/22521486?utm_source=electronicsdatasheets&utm_medium=aggregator&utm_campaign=buynow" rel="nofollow" target="_blank" class="btn btn-sm btn-block btn-automotive mb-1" data-trackEvent='["DKWidget", "Click", "Buy Now"]'>Buy Now</a>
+                            <a href="/product-centre/distributors/digi-key/part/66ef38d0ee3f178f359f45a3" class="btn btn-sm btn-block btn-outline-white" data-trackEvent='["DKWidget", "Click", "Learn More"]'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+    </div>
+    <div class="card-footer border-top-0">
+    </div>
+</div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12">
+                <div class="mb-4 text-center">
+    <img src="/build/images/icons/white/products.831919e1.png" class="img-fluid mb-2 bg-secondary">
+    <h4>
+        <a title="All upcoming events" href="/events/" class="text-quaternary font-weight-bold">
+            Upcoming Events        </a>
+    </h4>
+            <div class="card">
+            No events found.        </div>
+    </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-12 mb-4 text-center">
+                <div class='advert advert-boombox-4' data-advertname='Boombox 4'><!-- Boombox4 -->
+<div id='div-gpt-ad-1375282707343-0' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1375282707343-0'); });
+</script>
+</div></div>            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="row pr-0 position-relative mb-4 d-print-none">
+        <div class="bg-overlay top-unset bg-light h-75 ml-5 rounded-left"></div>
+        <div class="col-5 col-md-3 pr-0 pr-md-2">
+            <div class="py-2 pr-1 h-100">
+                <div class="card bg-news rounded-left-0 text-white" style="height: 352px;">
+                    <div class="card-body">
+                        <img src="/build/images/icons/white/news.59d2fb12.png" class="img-fluid mb-3">
+                        <h2>Further reading</h2>
+                        <p>A selection of Quantum Tech articles for further reading</p>
+                        <a href="/products/quantum/" class="btn btn-block btn-primary px-2 px-md-4">
+                            Read more                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7 col-md-9 pl-0 pl-md-0 pr-4">
+            <div class="owl-carousel owl-theme" data-dots="true" data-responsive='{"0" : {"items" : "1"}, "768" : {"items" : "4"}}'>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/vtt-and-iqm-launch-europe-s-first-50-qubit-quantum-computer" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/Quantum%20computer-50qbits%20launched%20main.jpg'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">4<sup>th</sup> March 2025</div>
+                                    <div class="card-title">
+                                        VTT and IQM launch Europe’s first 50-qubit quantum computer                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/amazon-releases-its-own-quantum-computing-chip" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/download.jpg'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">28<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Amazon releases its own quantum computing chip                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/socionext-announces-partnership-with-google-quantum-ai" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/AdobeStock_283633546_Editorial_Use_Only.jpeg'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">27<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Socionext announces partnership with Google Quantum AI                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/majorana-1-microsoft-s-new-quantum-chip" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/majorana1article.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">20<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Majorana 1: Microsoft’s new quantum chip                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/cea-leti-and-quobly-develop-qubit-readout-solution" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/CEA-Leti%20and%20Quobly.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">20<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        CEA-Leti and Quobly develop qubit-readout solution                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/semiconductor-vs-superconducting-photodetectors-in-quantum" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/idtechexsupersemiconduct.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">14<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Semiconductor vs superconducting photodetectors in quantum                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/oxford-scientists-link-quantum-computers-via-teleportation" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/oxford-quantum.jpg'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">10<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Oxford scientists link quantum computers via teleportation                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/secqai-launches-world-s-first-quantum-large-language-model" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/llm-design.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">7<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        SECQAI launches world’s first Quantum Large Language Model                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/empowering-the-intelligent-age-with-quantum-software" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/software-quna.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">7<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Empowering the intelligent age with quantum software                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/quantum-computing-is-coming-for-web3" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/AdobeStock_486997739.jpeg'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">5<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        Quantum computing is coming for Web3                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/uk-government-seeks-out-quantum-industry-experts" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/gov-quantum.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">4<sup>th</sup> February 2025</div>
+                                    <div class="card-title">
+                                        UK government seeks out quantum industry experts                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="py-2 pr-1 h-100">
+                        <a href="https://www.electronicspecifier.com/products/quantum/new-quantum-technique-could-improve-spectroscopy" class="card-hover">
+                            <div class="card border-0 text-dark" style="height: 352px;">
+                                <div class="card-img-bg-top" style="background-image:url('/cms/images/card-lg/quantum-light.png'); height:200px;"></div>
+                                <div class="mt-1">
+                                    <div class="badge badge-quantum rounded-left-0">Quantum Tech</div>
+                                </div>
+                                <div class="card-body small pt-2">
+                                    <div class="card-date mb-1">3<sup>rd</sup> February 2025</div>
+                                    <div class="card-title">
+                                        New quantum technique could improve spectroscopy                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+                </div>
+
+                <div id="newsletter" class="text-center text-white p-5 d-print-none">
+                    <div class="row align-items-center justify-content-center h-100">
+                        <div class="col">
+                            <img src="/build/images/icons/white/newsletter.4d10a1c5.png" class="img-fluid mb-2">
+                            <div class="h5">Newsletter</div>
+                            <div class="h1 mb-4">Latest global electronics news</div>
+                            <form id="newsletter-form" method="POST" action="/user/register">
+                                <div class="form-row">
+                                    <div class="col-8 mx-auto">
+                                        <input type="email" name="email" class="form-control form-control-lg mb-4 opacity-5 p-4" placeholder="Enter your email address">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="bg-quinary border-bottom border-white text-white p-3 d-print-none">
+                    <div class="row align-items-center pb-1">
+                        <div class="col">
+                            <button id="footer-navbar-toggler" class="navbar-toggler border-0 text-white" type="button" data-toggle="collapse" data-target="#navbar-footer" aria-controls="navbar-footer" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars"></i> Menu
+                            </button>
+                        </div>
+                        <div class="col">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://www.linkedin.com/company/electronic-specifier-ltd/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://twitter.com/electronicspec" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://www.facebook.com/ElectronicSpecifier" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white pt-1" href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fwww.electronicspecifier.com%2F%3Fformat%3Drss'  target='_blank' ><img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-logo-white_2x.png' alt='follow us in feedly' width='28' height='28'></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://www.youtube.com/channel/UCloJCyWMLtZl2WxdW_sanRQ" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://www.instagram.com/electronic_specifier" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-footer">
+                        <div class="row border-top border-white pl-4 pt-5 d-none d-md-flex">
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/products.831919e1.png" class="img-fluid mb-3">
+                            </div>
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/industries.ee6039c9.png" class="img-fluid mb-3">
+                            </div>
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/analysis.644bb1ab.png" class="img-fluid mb-3">
+                            </div>
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/product-centre.898dc96a.png" class="img-fluid mb-3">
+                            </div>
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/company.75018232.png" class="img-fluid mb-3">
+                            </div>
+                            <div class="col pr-0">
+                                <img src="/build/images/icons/white/network.04707e80.png" class="img-fluid mb-3">
+                            </div>
+                        </div>
+                        <div class="row pl-4">
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/products/">Products</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/3d-printing/" >
+                                3D Printing                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/5g/" >
+                                5G/6G                                       </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/artificial-intelligence/" >
+                                AI                               </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/boards-and-backplanes/" >
+                                Boards/Backplanes                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/cables-and-connecting/" >
+                                Cables/Connecting                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/communications/" >
+                                Communications                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/component-management/" >
+                                Component Management                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/cyber-security/" >
+                                Cyber Security                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/design-automation/" >
+                                Design                             </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/displays/" >
+                                Displays                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/e-mech/" >
+                                E-mech                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/cabinets-and-enclosures/" >
+                                Enclosures                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/fpgas/" >
+                                FPGAs                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/frequency-control/" >
+                                Frequency                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/iot/" >
+                                Internet of Things                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/memory/" >
+                                Memory                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/metaverse-1/" >
+                                Metaverse                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/micros/" >
+                                Micros                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/mixed-signal-analog/" >
+                                Mixed Signal/Analog                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/optoelectronics/" >
+                                Optoelectronics                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/passives/" >
+                                Passives                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/power/" >
+                                Power                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 active">
+                                                    <a class="nav-link text-white p-0 " href="/products/quantum/" >
+                                Quantum                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/renewables/" >
+                                Renewables                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/sensors/" >
+                                Sensors                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/test-and-measurement/" >
+                                T & M                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/tools/" >
+                                Tools                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/vr-ar/" >
+                                VR/AR                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/products/wearables/" >
+                                Wearables                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/industries/">Industries</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/aerospace-defence/" >
+                                Aerospace & Defence                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/automotive/" >
+                                Automotive                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/alternative-energy/" >
+                                Eco Innovation                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/industrial/" >
+                                Industrial                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/lighting/" >
+                                Lighting                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/medical/" >
+                                Medical                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/production/" >
+                                Production                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/robotics/" >
+                                Robotics                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/security/" >
+                                Security                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/industries/wireless/" >
+                                Wireless                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/news/">News & Analysis</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/analysis/" >
+                                Analysis                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/appointments/" >
+                                Appointments                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/awards/" >
+                                Awards                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/blog/" >
+                                Blog                             </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/events-news/" >
+                                Events                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/latest/" >
+                                Latest                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/podcasts/" >
+                                Podcasts                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/stem/" >
+                                STEM News                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/tech-videos/" >
+                                Tech Videos                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/webinars/" >
+                                Webinars                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/news/women-in-tech/" >
+                                Women in Tech                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/product-centre/manufacturers/texas-instruments/home/">TI Resource Centre</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/home/" >
+                                Welcome                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/" >
+                                Product Catalogue                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/featured-products/" >
+                                Featured Products                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/reference-designs/" >
+                                Reference Designs                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/application-notes/" >
+                                Application Notes                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/manufacturers/texas-instruments/evaluation-kits/" >
+                                Evaluation Kits                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://training.ti.com/" target="_blank" >
+                                Tech Videos&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.ti.com/design-resources/embedded-development.html" target="_blank" >
+                                Development Tools&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://e2e.ti.com/" target="_blank" >
+                                TI E2E™ Support Forums&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/product-centre/distributors/digi-key/home/">DigiKey Resource Centre</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/distributors/digi-key/home/" >
+                                Welcome                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/distributors/digi-key/" >
+                                Product Catalogue                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/product-centre/distributors/digi-key/featured-products/" >
+                                Featured Products                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.digikey.com/en/product-highlight" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;New Products&quot;]" >
+                                New Products&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.digikey.com/en/news/press-releases" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Press Releases&quot;]" >
+                                Press Releases&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.digikey.com/en/articles/techzone" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Articles&quot;]" >
+                                Articles&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.digikey.com/en/ptm" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Product Training&quot;]" >
+                                Product Training&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="http://www.digikey.com/en/blog" target="_blank" data-trackEvent="[&quot;DKResourceCentre&quot;, &quot;ExternalLink&quot;, &quot;Blog&quot;]" >
+                                Blog&nbsp;<span class="fa fa-external-link-alt"></span>                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/">Our Company</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/about-us" >
+                                About Us                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/tools" >
+                                ES Tools                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/media-kit" >
+                                Media Kit Request                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/publications" >
+                                Our Publications & Websites                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/privacy-policy" >
+                                Privacy Policy                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/pages/terms-and-conditions" >
+                                Terms and Conditions                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/archives/newsletter" >
+                                Newsletter Archive                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/archives/magazine" >
+                                Magazine Archive                            </a>
+                                            </li>
+                            </ul>
+                </div>
+                                            <div class="col-6 col-md pr-0 mb-5">
+                    <h4><a class="nav-link text-white p-0" href="/">ES Network</a></h4>
+            <ul class="navbar-nav flex-column">
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://www.engineeringspecifier.com?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" target="_blank" >
+                                Engineering                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://www.student-circuit.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" target="_blank" >
+                                Student Circuit                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://www.electronicsdatasheets.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" target="_blank" >
+                                Electronics Datasheets                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="https://www.edinventory.com/?utm_source=main%20menu&utm_medium=clickthrough&utm_campaign=ES%20Network" target="_blank" >
+                                ED Inventory                            </a>
+                                            </li>
+                                    <li class="nav-item text-white p-0 ">
+                                                    <a class="nav-link text-white p-0 " href="/companies" >
+                                Company Directory                            </a>
+                                            </li>
+                            </ul>
+                </div>
+            </div>                    </div>
+                </nav>
+
+                <nav id="post-footer" class="navbar navbar-dark bg-dark small">
+                    <div class="navbar-text">
+                        &copy; Copyright 2025 Electronic Specifier
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/pages/privacy-policy">Cookie Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/pages/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/pages/terms-and-conditions">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="px-4 py-2 d-none d-print-block">&copy; Copyright 2025 Electronic Specifier</div>
+            </div>
+            <button id="btn-top" title="Go to top" class="btn btn-tertiary position-fixed shadow text-white d-print-none" style="right:10px; bottom:10px; display:none;"><i class="fa fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+
+    <!-- Modal Login Form-->
+    <div id="loginModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="span3 center">
+                        <div class="row justify-content-center login-form">
+    <div class="col-6 border-right">
+        <h4>Login</h4>
+        <form method="post" action="&#x2F;user&#x2F;login" id="login-form">        <div class="form-group">
+            <label for="identity">Email</label>
+            <input name="identity" type="text" required="required" class="form-control" value="">        </div>
+        <div class="form-group">
+            <label for="credential">Password</label>
+        <input name="credential" type="password" required="required" class="form-control" value="">        </div>
+                <div class="form-group">
+            <button class="btn btn-sm btn-primary" name="submit">
+              Submit            </button>
+            <a href="/user/register" class="btn btn-sm btn-outline-primary">Register</a>
+        </div>
+        <img src="/img/ajax-loader-transparent.gif" id="loading-image" style="display:none;"/>
+        </form>        <small class="forgotpassword">
+          <a href="/user/forgotpassword">
+            Forgotten password?          </a>
+        </small>
+    </div>
+    <div class="col-6">
+        <h4>Social Login</h4>
+        <div class="px-3 py-5">
+            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="false" data-use-continue-as="true" data-scope="email" data-onlogin="updateProfile()"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //<!--
+    function updateProfile(){
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') {
+                $.ajax({
+                    type: "POST",
+                    dataType: 'json',
+                    url: '/user/loginfb?format=json',
+                    data: response.authResponse,
+                    beforeSend: function () {
+                        $('.login-form').addClass('loading');
+                    },
+                    success: function (response) {
+                        if (response.redirect){
+                            document.location = response.redirect;
+                        }
+                        if (response.alerts) {
+                            $.each(data.alerts, function (type, message) {
+                                $(".login-form").prepend('<div class="alert alert-' + type + '">' + message + '</div>');
+                            });
+                        }
+                    },
+                    complete: function (){
+                        $('.login-form').removeClass('loading');
+                    }
+                });
+            }
+        });
+    }
+    //-->
+</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Welcome Ad -->
+    <div id="welcomeModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="ml-auto"><span class="seconds">15</span>&nbsp;seconds left to wait, or close&nbsp;<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div>
+                </div>
+                <div class="modal-body">
+                    <div class="center">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Exit Ad -->
+    <div id="exitModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="center">
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Ad -->
+    <div class="d-block d-md-none fixed-bottom bg-white shadow">
+        <div class="mx-auto text-center p-1"><div class='advert advert-sticky-footer' data-advertname='Leaderboard_Mobile-Pinned'></script>
+<!-- /21169631/Leaderboard_Mobile-Pinned -->
+<div id='div-gpt-ad-1664269244415-0' style='min-width: 300px; min-height: 100px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1664269244415-0'); });
+  </script>
+</div>
+</div></div>
+    </div>
+    <script type="text&#x2F;javascript">
+    //<!--
+    window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("config","UA-1480272-1");
+gtag("js",new Date());
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = 'https://www.googletagmanager.com/gtag/js?id=UA-1480272-1';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+    //-->
+</script>
+<script type="text&#x2F;javascript">
+    //<!--
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=504537453531555&version=v2.7';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+    //-->
+</script>    
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5385022.js"></script>
+    <!-- End of HubSpot Embed Code -->
+</body>
+</html>

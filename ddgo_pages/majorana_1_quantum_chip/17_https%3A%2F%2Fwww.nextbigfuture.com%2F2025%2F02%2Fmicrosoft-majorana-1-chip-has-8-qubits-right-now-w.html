@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=i.length;r<a;r++)ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"))}for(var n=document.querySelectorAll("video"),r=0,a=n.length;r<a;r++)ewwwAttr(n[r],"poster",e?n[r].getAttribute("data-poster-webp"):n[r].getAttribute("data-poster-image"));for(var o,l=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=l.length;r<a;r++)e&&(ewwwAttr(l[r],"data-lazy-srcset",l[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(l[r],"data-srcset",l[r].getAttribute("data-srcset-webp")),ewwwAttr(l[r],"data-lazy-src",l[r].getAttribute("data-lazy-src-webp")),ewwwAttr(l[r],"data-src",l[r].getAttribute("data-src-webp")),ewwwAttr(l[r],"data-orig-file",l[r].getAttribute("data-webp-orig-file")),ewwwAttr(l[r],"data-medium-file",l[r].getAttribute("data-webp-medium-file")),ewwwAttr(l[r],"data-large-file",l[r].getAttribute("data-webp-large-file")),null!=(o=l[r].getAttribute("srcset"))&&!1!==o&&o.includes("R0lGOD")&&ewwwAttr(l[r],"src",l[r].getAttribute("data-lazy-src-webp"))),l[r].className=l[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var s=document.querySelectorAll(".ewww_webp"),r=0,a=s.length;r<a;r++)e?(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-webp")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-webp")),ewwwAttr(s[r],"data-orig-file",s[r].getAttribute("data-webp-orig-file")),ewwwAttr(s[r],"data-medium-file",s[r].getAttribute("data-webp-medium-file")),ewwwAttr(s[r],"data-large-file",s[r].getAttribute("data-webp-large-file")),ewwwAttr(s[r],"data-large_image",s[r].getAttribute("data-webp-large_image")),ewwwAttr(s[r],"data-src",s[r].getAttribute("data-webp-src"))):(ewwwAttr(s[r],"srcset",s[r].getAttribute("data-srcset-img")),ewwwAttr(s[r],"src",s[r].getAttribute("data-src-img"))),s[r].className=s[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com</title>
+<meta name="description" content="Microsoft team behind the recent breakthrough in physics and quantum computing demonstrated by the new Majorana 1 chip, engineered from an entirely new"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com" />
+<meta property="og:description" content="Microsoft team behind the recent breakthrough in physics and quantum computing demonstrated by the new Majorana 1 chip, engineered from an entirely new" />
+<meta property="og:url" content="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html" />
+<meta property="og:site_name" content="NextBigFuture.com" />
+<meta property="article:tag" content="microsoft" />
+<meta property="article:tag" content="qubits" />
+<meta property="article:tag" content="science" />
+<meta property="article:tag" content="superconductor" />
+<meta property="article:tag" content="technology" />
+<meta property="article:tag" content="topological quantum computer" />
+<meta property="article:section" content="Artificial intelligence" />
+<meta property="og:updated_time" content="2025-02-20T17:47:52-08:00" />
+<meta property="og:image" content="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg" />
+<meta property="og:image:secure_url" content="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg" />
+<meta property="og:image:width" content="951" />
+<meta property="og:image:height" content="461" />
+<meta property="og:image:alt" content="Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2025-02-20T16:12:36-08:00" />
+<meta property="article:modified_time" content="2025-02-20T17:47:52-08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com" />
+<meta name="twitter:description" content="Microsoft team behind the recent breakthrough in physics and quantum computing demonstrated by the new Majorana 1 chip, engineered from an entirely new" />
+<meta name="twitter:image" content="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Brian Wang" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="11 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.nextbigfuture.com/#place","address":{"@type":"PostalAddress","streetAddress":"551 Grand Fir Avenue Unit 4","addressLocality":"Sunnyvale","addressRegion":"CA","postalCode":"94086","addressCountry":"United States"}},{"@type":"Organization","@id":"https://www.nextbigfuture.com/#organization","name":"NextBigFuture.com","url":"https://www.nextbigfuture.com","email":"Brian@nextbigfuture.com","address":{"@type":"PostalAddress","streetAddress":"551 Grand Fir Avenue Unit 4","addressLocality":"Sunnyvale","addressRegion":"CA","postalCode":"94086","addressCountry":"United States"},"logo":{"@type":"ImageObject","@id":"https://www.nextbigfuture.com/#logo","url":"https://www.nextbigfuture.com/wp-content/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png","contentUrl":"https://www.nextbigfuture.com/wp-content/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png","caption":"NextBigFuture.com","inLanguage":"en-US","width":"326","height":"96"},"location":{"@id":"https://www.nextbigfuture.com/#place"}},{"@type":"WebSite","@id":"https://www.nextbigfuture.com/#website","url":"https://www.nextbigfuture.com","name":"NextBigFuture.com","publisher":{"@id":"https://www.nextbigfuture.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg","url":"https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg","width":"951","height":"461","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.nextbigfuture.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.nextbigfuture.com/category/artificial-intelligence","name":"Artificial intelligence"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html","name":"Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits"}}]},{"@type":"WebPage","@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#webpage","url":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html","name":"Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com","datePublished":"2025-02-20T16:12:36-08:00","dateModified":"2025-02-20T17:47:52-08:00","isPartOf":{"@id":"https://www.nextbigfuture.com/#website"},"primaryImageOfPage":{"@id":"https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg"},"inLanguage":"en-US","breadcrumb":{"@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#breadcrumb"}},{"@type":"Person","@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#author","name":"Brian Wang","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/f68dff1bdf060d7cbd39e1e4de9aaf7a?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/f68dff1bdf060d7cbd39e1e4de9aaf7a?s=96&amp;d=mm&amp;r=g","caption":"Brian Wang","inLanguage":"en-US"},"sameAs":["https://www.nextbigfuture.com"],"worksFor":{"@id":"https://www.nextbigfuture.com/#organization"}},{"@type":"NewsArticle","headline":"Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com","datePublished":"2025-02-20T16:12:36-08:00","dateModified":"2025-02-20T17:47:52-08:00","articleSection":"Artificial intelligence, News, Quantum computers, Science, Superconductor, Technology, World","author":{"@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#author","name":"Brian Wang"},"publisher":{"@id":"https://www.nextbigfuture.com/#organization"},"description":"Microsoft team behind the recent breakthrough in physics and quantum computing demonstrated by the new Majorana 1 chip, engineered from an entirely new","name":"Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits | NextBigFuture.com","@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#richSnippet","isPartOf":{"@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#webpage"},"image":{"@id":"https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//widgetlogic.org' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//nextbigfuture.s3.amazonaws.com' />
+<link rel='dns-prefetch' href='//pagead2.googlesyndication.com' />
+<link rel="alternate" type="application/rss+xml" title="NextBigFuture.com &raquo; Feed" href="https://www.nextbigfuture.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="NextBigFuture.com &raquo; Comments Feed" href="https://www.nextbigfuture.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="NextBigFuture.com &raquo; Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits Comments Feed" href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html/feed" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.nextbigfuture.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<!-- nextbigfuture.com is managing ads with Advanced Ads 1.56.2 --><script id="nextb-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.nextbigfuture.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='block-widget-css' href='https://www.nextbigfuture.com/wp-content/plugins/widget-logic/block_widget/css/widget.css?ver=1725173310' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='chain-wire-css' href='https://www.nextbigfuture.com/wp-content/plugins/chainwire-integration/public/css/chainwire-public.css?ver=1.0.24' media='all' />
+<link rel='stylesheet' id='gn-frontend-gnfollow-style-css' href='https://www.nextbigfuture.com/wp-content/plugins/gn-publisher/assets/css/gn-frontend-gnfollow.min.css?ver=1.5.20' media='all' />
+<link rel='stylesheet' id='generate-comments-css' href='https://www.nextbigfuture.com/wp-content/themes/generatepress/assets/css/components/comments.min.css?ver=3.5.1' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://www.nextbigfuture.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.5.1' media='all' />
+<style id='generate-style-inline-css'>
+@media (max-width:768px){}
+body{background-color:#f7f8f9;color:#222222;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}.wp-block-group__inner-container{max-width:1200px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:240px;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}:root .has-contrast-color{color:var(--contrast);}:root .has-contrast-background-color{background-color:var(--contrast);}:root .has-contrast-2-color{color:var(--contrast-2);}:root .has-contrast-2-background-color{background-color:var(--contrast-2);}:root .has-contrast-3-color{color:var(--contrast-3);}:root .has-contrast-3-background-color{background-color:var(--contrast-3);}:root .has-base-color{color:var(--base);}:root .has-base-background-color{background-color:var(--base);}:root .has-base-2-color{color:var(--base-2);}:root .has-base-2-background-color{background-color:var(--base-2);}:root .has-base-3-color{color:var(--base-3);}:root .has-base-3-background-color{background-color:var(--base-3);}:root .has-accent-color{color:var(--accent);}:root .has-accent-background-color{background-color:var(--accent);}body, button, input, select, textarea{font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}body{line-height:1.5;}.entry-content > [class*="wp-block-"]:not(:last-child):not(.wp-block-heading){margin-bottom:1.5em;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}@media (max-width:768px){h1{font-size:31px;}h2{font-size:27px;}h3{font-size:24px;}h4{font-size:22px;}h5{font-size:19px;}}.top-bar{background-color:#4680be;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#4680be;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:#4680be;}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#cccccc;background-color:#ffffff;}button.menu-toggle:hover,button.menu-toggle:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#cccccc;background-color:#001a54;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#cccccc;background-color:#ffffff;}.main-navigation ul ul{background-color:#4680be;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#ffffff;background-color:#0d1f33;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#7a8896;background-color:#eaeaea;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-title a{color:#222222;}.entry-title a:hover{color:#55555e;}.entry-meta{color:#595959;}.sidebar .widget{background-color:#ffffff;}.footer-widgets{background-color:#ffffff;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#ffffff;background-color:#55555e;}.site-info a{color:#ffffff;}.site-info a:hover{color:#d3d3d3;}.footer-bar .widget_nav_menu .current-menu-item a{color:#d3d3d3;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#55555e;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}:root{--gp-search-modal-bg-color:var(--base-3);--gp-search-modal-text-color:var(--contrast);--gp-search-modal-overlay-bg-color:rgba(0,0,0,0.2);}@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.inside-top-bar.grid-container{max-width:1280px;}.inside-header.grid-container{max-width:1280px;}.site-main .wp-block-group__inner-container{padding:40px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.footer-widgets-container.grid-container{max-width:1280px;}.inside-site-info.grid-container{max-width:1280px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:30px;padding-left:30px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width: 768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}.has-inline-mobile-toggle .mobile-menu-control-wrapper{display:flex;flex-wrap:wrap;}.has-inline-mobile-toggle .inside-header{flex-direction:row;text-align:left;flex-wrap:wrap;}.has-inline-mobile-toggle .header-widget,.has-inline-mobile-toggle #site-navigation{flex-basis:100%;}.nav-float-left .has-inline-mobile-toggle #site-navigation{order:10;}}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+</style>
+<link rel='stylesheet' id='generate-blog-images-css' href='https://www.nextbigfuture.com/wp-content/plugins/gp-premium/blog/functions/css/featured-images.min.css?ver=2.5.0' media='all' />
+<script src="https://www.nextbigfuture.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.nextbigfuture.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-MQJRBDR" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["www.nextbigfuture.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-MQJRBDR");
+</script>
+
+<!-- End Google tag (gtag.js) snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://www.nextbigfuture.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.nextbigfuture.com/wp-json/wp/v2/posts/201211" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.nextbigfuture.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.2" />
+<link rel='shortlink' href='https://www.nextbigfuture.com/?p=201211' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.nextbigfuture.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nextbigfuture.com%2F2025%2F02%2Fmicrosoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.nextbigfuture.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.nextbigfuture.com%2F2025%2F02%2Fmicrosoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.146.0" /><!-- <script type='text/javascript'>    
+    let temScript = document.createElement('script');temScript.src = 'https://adncdnend.azureedge.net/adtags/nextbigfuture.adn.js';    
+    document.getElementsByTagName('head')[0].append(temScript);
+</script> -->
+
+<!-- <script type="text/javascript"> var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; var pbjs = pbjs || {}; pbjs.que = pbjs.que || []; </script> -->
+
+<!-- <script src="https://adncdnend.azureedge.net/adn-hb/adn.nbf2.js" async></script> -->
+<script src="https://adncdn.net/TupdMN5E" async></script>
+<!-- <script>
+// 	setTimeout(()=>{
+// 		if(window.location.href.includes("/2024/04/sens-research-foundation-and-lifespan-io-merging.html")){
+// 			!function(n){if(!window.cnx){window.cnx={},window.cnx.cmd=[];var t=n.createElement('iframe');t.src='javascript:false'; t.display='none',t.onload=function()
+// 			{var n=t.contentWindow.document,c=n.createElement('script');c.src='//cd.connatix.com/connatix.player.js?cid=a0b1a1ac-b445-44ae-8494-8271f00b7d8f',c.setAttribute('async','1'),c.setAttribute('type','text/javascript'),n.body.appendChild(c)},n.head.appendChild(t)}}(document);
+//      } else {
+// 		if(!((window.location.href.includes("https://www.nextbigfuture.com/contacts")) || (window.location.href.includes("https://www.nextbigfuture.com/about"))) )
+// 			{
+// 				console.log("trvd");
+//                 var script = document.createElement('script');
+//                 script.src = 'https://cnt.trvdp.com/js/1770/11881.js';
+//                 document.head.appendChild(script);script
+// 			}
+				
+// 	 {
+// 		        var aniViewScript = document.createElement('script');
+//         aniViewScript.id = 'AV64e3585003d6f5a9da06c3d4';
+//         aniViewScript.type = 'text/javascript';
+//         aniViewScript.src = '//tg1.aniview.com/api/adserver/spt?AV_TAGID=64e3585003d6f5a9da06c3d4&AV_PUBLISHERID=601d9a7f2e688a79e17c1265';
+//         document.body.appendChild(aniViewScript);
+// 	  }
+// 	 }
+// 	, 500);		
+<script async id="AV64e3585003d6f5a9da06c3d4" type="text/javascript" src="https://tg1.aniview.com/api/adserver/spt?AV_TAGID=64e3585003d6f5a9da06c3d4&AV_PUBLISHERID=601d9a7f2e688a79e17c1265">
+// </script> -->
+
+
+<!-- <script>
+	var randomNumber = Math.random();
+    if (window.location.href.includes("/xai-grok-2-in-august-could-beat-gpt-4o-and-claude-3-5.html")) {randomNumber = 0.01 };
+	
+	console.log("trvd");
+	var script = document.createElement('script');
+	script.src = 'https://cnt.trvdp.com/js/1770/11881.js';
+	document.head.appendChild(script);script
+	
+</script> -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+			let createAdDivWithVideoPlayer = () => {
+				// Locate the target element
+				var targetElement = document.querySelector(".entry-content > p:nth-child(1)");
+
+				if (!targetElement) {
+					console.error("Target element not found.");
+					return;
+				}
+
+				// Create the advertisement container
+				var adContainer = document.createElement('div');
+				adContainer.id = 'ad-container';
+				adContainer.style.border = '1px solid #ccc';
+				adContainer.style.padding = '10px';
+				adContainer.style.marginTop = '20px';
+				adContainer.style.textAlign = 'center';
+				adContainer.style.backgroundColor = '#f9f9f9';
+
+				// Create the "ADVERTISEMENT" label
+				var adLabel = document.createElement('div');
+				adLabel.textContent = "ADVERTISEMENT";
+				adLabel.style.fontWeight = 'bold';
+				adLabel.style.marginBottom = '10px';
+				adLabel.style.fontSize = '14px';
+				adLabel.style.color = '#555';
+
+				// Create the script tag for the video player
+				var script = document.createElement('script');
+				script.src = 'https://live.primis.tech/live/liveView.php?s=119126&schain=1.0,1!adnimation.com,20200013,1';
+
+				// Append the label and script to the container
+				adContainer.appendChild(adLabel);
+				adContainer.appendChild(script);
+
+				// Insert the ad container after the target element
+				targetElement.after(adContainer);
+
+				console.log("Ad container with video player added.");
+			};
+
+			// Call the function to create and add the advertisement
+			createAdDivWithVideoPlayer();
+
+//         //         var randomNumber = Math.random();
+//         if (window.location.href.includes("/2024/12/tesla-china-vp-and-full-self-driving-nearing-china-release.html")) {
+//             randomNumber = 0.0123;
+//         }
+
+//         if (randomNumber === 0.0123) {
+//             console.log("prim");
+//             var script = document.createElement('script');
+//             script.src = 'https://live.primis.tech/live/liveView.php?s=119126';
+//         if(document.querySelector(".entry-content > p:nth-child(1")) {
+//             document.querySelector(".entry-content > p:nth-child(1)").after(script);
+//         }
+// 			document.body.appendChild(script);
+//         } else {
+//             console.log("trvd");
+//             var script = document.createElement('script');
+//             script.src = 'https://cnt.trvdp.com/js/1770/11881.js';
+//             document.head.appendChild(script);
+//         }
+    });
+</script>
+
+
+<meta name="google-site-verification" content="iypK0hjvlPOWx-9PHUehP9vdDUd8YDse8PwUNivWnug" />
+
+<script type="text/javascript">
+	 window._taboola = window._taboola || [];
+	 _taboola.push({article:'auto'});
+	 !function (e, f, u, i) {
+	 if (!document.getElementById(i)){
+	 e.async = 1;
+	 e.src = u;
+	 e.id = i;
+	 f.parentNode.insertBefore(e, f);
+	 }
+	 }(document.createElement('script'),
+	 document.getElementsByTagName('script')[0],
+	 '//cdn.taboola.com/libtrc/adnimationnetwork/loader.js',
+	 'tb_loader_script');
+	 if(window.performance && typeof window.performance.mark == 'function')
+	 {window.performance.mark('tbl_ic');}
+</script>
+<!-- Google AdSense meta tags added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense meta tags added by Site Kit -->
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}.lazyload:before{background-image:none !important;}</style><style>.wp-block-gallery.is-cropped .blocks-gallery-item picture{height:100%;width:100%;}</style><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<!-- Google AdSense snippet added by Site Kit -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6855513832486673&amp;host=ca-host-pub-2644536267352236" crossorigin="anonymous"></script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:18px;height:18px;}</style><link rel="icon" href="https://nextbigfuture.s3.amazonaws.com/uploads/2017/04/ed85e288e0f5fe89658de9e9a0c1630c-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://nextbigfuture.s3.amazonaws.com/uploads/2017/04/ed85e288e0f5fe89658de9e9a0c1630c-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://nextbigfuture.s3.amazonaws.com/uploads/2017/04/ed85e288e0f5fe89658de9e9a0c1630c-300x300.png" />
+<meta name="msapplication-TileImage" content="https://nextbigfuture.s3.amazonaws.com/uploads/2017/04/ed85e288e0f5fe89658de9e9a0c1630c-300x300.png" />
+</head>
+
+<body class="post-template-default single single-post postid-201211 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center sticky-menu-fade right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover featured-image-active aa-prefix-nextb-" itemtype="https://schema.org/Blog" itemscope>
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site"  itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container">
+				<div class="site-logo">
+					<a href="https://www.nextbigfuture.com/" rel="home">
+						<img  class="header-image is-logo-image lazyload" alt="NextBigFuture.com" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUYAAABgAQAAAABJLubCAAAAAnRSTlMAAHaTzTgAAAAbSURBVEjH7cExAQAAAMKg9U9tDQ+gAAAAgHcDD8AAAXa7MaEAAAAASUVORK5CYII="  width="326" height="96" data-src="https://nextbigfuture.s3.amazonaws.com/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png" decoding="async" data-srcset="https://nextbigfuture.s3.amazonaws.com/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png 1x, https://nextbigfuture.s3.amazonaws.com/uploads/2018/12/NBFlogo.png 2x" data-eio-rwidth="326" data-eio-rheight="96" /><noscript><img  class="header-image is-logo-image" alt="NextBigFuture.com" src="https://nextbigfuture.s3.amazonaws.com/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png" srcset="https://nextbigfuture.s3.amazonaws.com/uploads/2019/03/1761eac3b1967fa6e4cafb6af110abcc-1.png 1x, https://nextbigfuture.s3.amazonaws.com/uploads/2018/12/NBFlogo.png 2x" width="326" height="96" data-eio="l" /></noscript>
+					</a>
+				</div>	<nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
+				<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>		</button>
+	</nav>
+			<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-main-menu-logo-links" class=" menu sf-menu"><li id="menu-item-194000" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-194000"><a href="https://www.nextbigfuture.com/category/artificial-intelligence">Artificial intelligence</a></li>
+<li id="menu-item-191135" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-191135"><a href="https://www.nextbigfuture.com/category/superconductor">Superconductor</a></li>
+<li id="menu-item-194001" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-194001"><a href="https://www.nextbigfuture.com/category/humanoid-robot">Humanoid Robot</a></li>
+<li id="menu-item-194002" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-194002"><a href="https://www.nextbigfuture.com/category/science">Science</a></li>
+<li id="menu-item-155307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-155307"><a href="https://www.nextbigfuture.com/about">About<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-194009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194009"><a href="https://www.nextbigfuture.com/contacts">Contact</a></li>
+	<li id="menu-item-194007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194007"><a href="https://www.nextbigfuture.com/about">About</a></li>
+	<li id="menu-item-194004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194004"><a href="https://www.nextbigfuture.com/privacy-policy">Privacy Policy</a></li>
+	<li id="menu-item-194005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194005"><a href="https://www.nextbigfuture.com/terms-and-conditions">Terms and Conditions</a></li>
+</ul>
+</li>
+</ul></div>			</div>
+		</nav>
+					</div>
+		</header>
+		<amp-iframe width="1" title="User Sync"
+  	height="1"
+  	sandbox="allow-scripts"
+  	frameborder="0"
+ 	 src="https://cdn.jsdelivr.net/npm/prebid-universal-creative@latest/dist/load-cookie.html">
+  	<amp-img layout="fill" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" placeholder></amp-img>
+</amp-iframe>
+	<div class="site grid-container container hfeed" id="page">
+				<div class="site-content" id="content">
+			
+	<div class="content-area" id="primary">
+		<main class="site-main" id="main">
+			<nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="https://www.nextbigfuture.com">Home</a><span class="separator"> &raquo; </span><a href="https://www.nextbigfuture.com/category/artificial-intelligence">Artificial intelligence</a><span class="separator"> &raquo; </span><span class="last">Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits</span></p></nav>
+<article id="post-201211" class="post-201211 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-news category-quantum-computers category-science category-superconductor category-technology category-world tag-microsoft tag-qubits tag-science tag-superconductor tag-technology tag-topological-quantum-computer" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		<div class="featured-image  page-header-image-single ">
+				<img width="951" height="461" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA7cAAAHNAQAAAADtObEgAAAAAnRSTlMAAHaTzTgAAABMSURBVHja7cExAQAAAMKg9U9tCy+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgZ9gYAAH/o1rhAAAAAElFTkSuQmCC" class="attachment-full size-full lazyload" alt="" itemprop="image" decoding="async" fetchpriority="high"   data-src="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg" data-srcset="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg 951w, https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM-300x145.jpg 300w, https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM-768x372.jpg 768w" data-sizes="auto" data-eio-rwidth="951" data-eio-rheight="461" /><noscript><img width="951" height="461" src="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg" class="attachment-full size-full" alt="" itemprop="image" decoding="async" fetchpriority="high" srcset="https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM.jpg 951w, https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM-300x145.jpg 300w, https://nextbigfuture.s3.amazonaws.com/uploads/2025/02/Screenshot-2025-02-20-at-3.45.44-PM-768x372.jpg 768w" sizes="(max-width: 951px) 100vw, 951px" data-eio="l" /></noscript>
+			</div>			<header class="entry-header">
+				<h1 class="entry-title" itemprop="headline">Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits</h1>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2025-02-20T17:47:52-08:00" itemprop="dateModified">February 20, 2025</time><time class="entry-date published" datetime="2025-02-20T16:12:36-08:00" itemprop="datePublished">February 20, 2025</time></span> <span class="byline">by <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://www.nextbigfuture.com/author/brian-wang" title="View all posts by Brian Wang" rel="author" itemprop="url"><span class="author-name" itemprop="name">Brian Wang</span></a></span></span> 		</div>
+					</header>
+			
+		<div class="entry-content" itemprop="text">
+			<p>Microsoft team behind the recent breakthrough in physics and quantum computing demonstrated by the new Majorana 1 chip, engineered from an entirely new material that has the potential to scale to millions of qubits on a single chip.  </p>
+<p>Microsoft today introduced Majorana 1, the world’s first quantum chip powered by a new Topological Core architecture that it expects will realize quantum computers capable of solving meaningful, industrial-scale problems in years, not decades.</p>
+<p>QuEra, Quantinuum and Quantum Circuits are in the lead with error corrected or fast error detecting quantum systems. We are still 4-8 years away from major error corrected quantum systems that might make a big computing difference for some kinds of problems.</p>
+<p>Microsoft leverages the world’s first topoconductor, a breakthrough type of material which can observe and control Majorana particles to produce more reliable and scalable qubits, which are the building blocks for quantum computers.</p>
+<p>The Microsoft Majorana 1 chip currently has <b>8 qubits</b>. These are topological qubits, which are designed to be more stable and less prone to errors compared to traditional qubits, thanks to their unique properties based on Majorana zero modes.</p>
+<p>Microsoft has outlined an ambitious roadmap to scale up to 1 million qubits on a single chip. This significant jump from 8 qubits is made feasible by their new architecture, which leverages the inherent stability of topological qubits. The company believes this approach provides a clear path to fitting a million qubits onto a single chip, a claim supported by the enhanced error resistance of their qubit design.</p>
+<p>Regarding whether these 1 million qubits would be logical qubits or raw qubits:</p>
+<p>    Raw qubits refer to the physical qubits on the chip.<br />
+    Logical qubits are error-corrected qubits capable of reliable computations, typically requiring multiple raw qubits for error correction.</p>
+<p>Microsoft&#8217;s roadmap appears to focus on scaling to 1 million raw qubits. The stability of their topological qubits—often likened to a knot in a rope that stays in place even when disturbed—suggests that these raw qubits have built-in error resistance at the hardware level. This could reduce the number of additional raw qubits needed for error correction. Microsoft&#8217;s approach simplifies quantum error correction through a measurement-based method using digital pulses, further supporting the idea that the 1 million figure refers to raw qubits with enhanced stability.</p>
+<p>However, for practical quantum computing, logical qubits are essential to ensure reliable and accurate computations. Even with 1 million raw qubits, Microsoft would still need to implement error correction to create a smaller number of logical qubits from these raw ones. The exact number of logical qubits achievable would depend on the efficiency of their error-correction techniques, which is not fully detailed in the available information.</p>
+<p><b>Logical Error Corrected Qubit Estimates &#8211; Error corrected Are More Important Than More Raw Qubits</b></p>
+<p>While exact numbers are still under investigation, research suggests that topological qubits could significantly reduce the ratio of raw qubits to logical qubits compared to traditional methods:</p>
+<p>    Theoretical estimates: In ideal scenarios, with high-fidelity topological operations and strong topological protection, some studies propose that the ratio could be as low as 2 to 10 raw qubits per logical qubit.</p>
+<p>    Practical expectations: Accounting for real-world imperfections, more conservative estimates suggest a ratio closer to 10 to 50 raw qubits per logical qubit. This is still a substantial improvement over traditional quantum error correction schemes, which often require 100–1,000 raw qubits per logical qubit, and possibly even dual-rail qubits, which might require about 20 raw qubits per logical qubit.</p>
+<p>Besides error correction there is how many operations can be performed. Like how many steps of an algorithm.</p>
+<p><b>Who is in the Lead?</b></p>
+<p><b>QuEra Computing</b><br />
+QuEra, a pioneer in neutral atom technology, has achieved a notable milestone in collaboration with Harvard University. In December 2023, they demonstrated <b>48 logical qubits using 280 physical qubit</b>, executing large-scale algorithms on an error-corrected quantum computer. This demonstration included high-fidelity operations, such as a two-qubit transversal CNOT gate with a fidelity of 0.9993, and a circuit error rate of 0.002 with eight logical qubits—11 times better than their physical qubit error rate of 0.023. QuEra&#8217;s roadmap aims for 100 logical qubits by 2026, but their current record stands at 48 logical qubits, making it a significant achievement in the field.</p>
+<p><b>Quantinuum</B><br />
+Quantinuum, a leader in trapped ion technology, has made significant strides with its H-Series quantum computers. In collaboration with Microsoft, Quantinuum demonstrated <b>12 logical qubits using ion-trap hardware</b>, achieving an impressive 800-fold reduction in error rates compared to physical qubits. This milestone highlights the high reliability of their logical qubits, making them suitable for fault-tolerant computations. Additionally, in December 2024, Quantinuum announced entangling 50 logical qubits in a specific experiment, creating a Greenberger-Horne-Zeilinger (GHZ) state. However, this appears to be a specialized benchmark rather than an indication of 50 fully operational logical qubits for general use. For practical computations, their demonstrated capacity remains at 12 logical qubits.</p>
+<p><a href="https://www.nextbigfuture.com/2024/11/quantum-circuits-make-error-detecting-qubits.html">Quantum Circuits has error detecting qubits.</a><br />
+They use a superconducting system uses cylindrical chambers that confine a single microwave frequency photon. They use RF frequencies to control the movement and actions of the photon. A coupler connecting the two chambers is used to transfer the photon between the chambers. Currently, the chambers each have a diameter of 5 millimeters. They will shrink those down to microscopic size in later generations. Superconducting Dual Resonator Qubits enhance the fidelity of quantum applications with error detection and correction.</p>
+<p>There are two superconducting resonators (aka cavities) connected by a so-called “coupler.”</p>
+<p>Quantum Circuits’ error-detecting dual-rail qubits innovation allows errors to be detected and corrected first to avoid disrupting performance at scale. This system will enable about 10-20 physical quantum qubits instead of 200 physical qubits for each error correct logical qubit.</p>
+<p><b>PsiQuantum</B><br />
+PsiQuantum is developing a photonic quantum computer with an ambitious goal of reaching 1 million qubits. While this target is promising, their technology is still in the development phase, and they have not yet announced any operational quantum computers or demonstrated logical qubits. As a result, PsiQuantum currently has 0 logical qubits in terms of proven achievements.</p>
+<p>Other companies like IBM, Google, and IonQ have not yet reported logical qubit counts that rival QuEra or Quantinuum. This microsoft work is not talking about a logical error corrected qubit yet.</p>
+<p><b>2033 Goal for Utility Scale Quantum Computing</b></p>
+<p><A href="https://www.darpa.mil/news/2025/quantum-computing-approaches">DARPA has selected and is in negotiations with Microsoft and PsiQuantum</a> for the Validation and Co-Design stage of the Underexplored Systems for Utility-Scale Quantum Computing (US2QC) program, one of two programs that make up DARPA’s larger Quantum Benchmarking Initiative (QBI).</p>
+<p><iframe width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-src="https://www.youtube.com/embed/E98zLxB7EQs?si=fwCxQ768yBwtK_do" class="lazyload"></iframe></p>
+<p>DARPA’s Quantum Benchmarking Initiative (QBI) aims to determine whether it’s possible to build an industrially useful quantum computer much faster than conventional predictions. Specifically, QBI is designed to rigorously verify and validate whether any quantum computing approach can achieve utility-scale operation — meaning its computational value exceeds its cost — by the year 2033.</p>
+<p><B>New Superconductor-Semiconductor for Majorana Chips</B></p>
+<p>In the same way that the invention of semiconductors made today’s smartphones, computers and electronics possible, topoconductors and the new type of chip they enable offer a path to developing quantum systems that can scale to a million qubits and are capable of tackling the most complex industrial and societal problems, Microsoft said.</p>
+<p><iframe width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-src="https://www.youtube.com/embed/Q4xCR20Dh1E?si=mjMQrbY168B8530k" class="lazyload"></iframe></p>
+<p><iframe width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-src="https://www.youtube.com/embed/1YlGoNRVeIY?si=Q7YLIj5pLJuDvSwP" class="lazyload"></iframe></p>
+<p>This new architecture used to develop the Majorana 1 processor offers a clear path to fit a million qubits on a single chip that can fit in the palm of one’s hand, Microsoft said. This is a needed threshold for quantum computers to deliver transformative, real-world solutions – such as breaking down microplastics into harmless byproducts or inventing self-healing materials for construction, manufacturing or healthcare. All the world’s current computers operating together can’t do what a one-million-qubit quantum computer will be able to do. </p>
+<p>Microsoft’s topological qubit architecture has aluminum nanowires joined together to form an H. Each H has four controllable Majoranas and makes one qubit. These Hs can be connected, too, and laid out across the chip like so many tiles.</p>
+<p>“It’s complex in that we had to show a new state of matter to get there, but after that, it’s fairly simple. It tiles out. You have this much simpler architecture that promises a much faster path to scale,” said Krysta Svore, Microsoft technical fellow.</p>
+<p>Chapters:<br />
+0:00 &#8211; Introducing Majorana 1<br />
+1:26 &#8211; Why does quantum computing matter?<br />
+2:47 &#8211; Qubits, the building blocks of quantum computing<br />
+5:05 &#8211; Understanding the topological state<br />
+7:00 &#8211; How the Majorana 1 chip works<br />
+9:10 &#8211; How quantum and classical computing work together<br />
+10:13 &#8211; The Quantum Age</p>
+<p><iframe loading="lazy" width="560" height="315"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-src="https://www.youtube.com/embed/wSHmygPQukQ?si=2HA_5hRBYP4_uR4g" class="lazyload"></iframe></p>
+<p>The topoconductor, or topological superconductor, is a special category of material that can create an entirely new state of matter – not a solid, liquid or gas but a topological state. This is harnessed to produce a more stable qubit that is fast, small and can be digitally controlled, without the tradeoffs required by current alternatives. A new paper published Wednesday in Nature outlines how Microsoft researchers were able to create the topological qubit’s exotic quantum properties and also accurately measure them, an essential step for practical computing.</p>
+<p>This breakthrough required developing an entirely new materials stack made of indium arsenide and aluminum, much of which Microsoft designed and fabricated atom by atom. The goal was to coax new quantum particles called Majoranas into existence and take advantage of their unique properties to reach the next horizon of quantum computing, Microsoft said.  </p>
+<p>The world’s first Topological Core powering the Majorana 1 is reliable by design, incorporating error resistance at the hardware level making it more stable.</p>
+<p>Commercially important applications will also require trillions of operations on a million qubits, which would be prohibitive with current approaches that rely on fine-tuned analog control of each qubit. The Microsoft team’s new measurement approach enables qubits to be controlled digitally, redefining and vastly simplifying how quantum computing works.</p>
+<p>Microsoft has partnered with Quantinuum and Atom Computing to reach scientific and engineering breakthroughs with today’s qubits, including the announcement last year of the industry’s first reliable quantum computer.</p>
+<p>The quantum chip doesn’t work alone. It exists in an ecosystem with control logic, a dilution refrigerator that keeps qubits at temperatures much colder than outer space and a software stack that can integrate with AI and classical computers. All those pieces exist, built or modified entirely in-house, she said.</p>
+<p>To be clear, continuing to refine those processes and getting all the elements to work together at accelerated scale will require more years of engineering work. But many difficult scientific and engineering challenges have now been met, Microsoft said.</p>
+<p>Getting the materials stack right to produce a topological state of matter was one of the hardest parts, Svore added. Instead of silicon, Microsoft’s topoconductor is made of indium arsenide, a material currently used in such applications as infrared detectors and which has special properties. The semiconductor is married with superconductivity, thanks to extreme cold, to make a hybrid.</p>
+<p>“We are literally spraying atom by atom. Those materials have to line up perfectly. If there are too many defects in the material stack, it just kills your qubit,” Svore said.</p>
+<p><a href="https://www.nature.com/articles/s41586-024-08445-2" target="_blank" rel="noopener">Nature- Interferometric single-shot parity measurement in InAs–Al hybrid devices</a></p>
+<p><b>Abstract</B></p>
+<p>The fusion of non-Abelian anyons is a fundamental operation in measurement-only topological quantum computation1. In one-dimensional topological superconductors (1DTSs) fusion amounts to a determination of the shared fermion parity of Majorana zero modes (MZMs). Here we introduce a device architecture5 that is compatible with future tests of fusion rules. We implement a single-shot interferometric measurement of fermion parity  in indium arsenide–aluminium heterostructures with a gate-defined superconducting nanowire. The interferometer is formed by tunnel-coupling the proximitized nanowire to quantum dots. The nanowire causes a state-dependent shift of the quantum capacitance of these quantum dots of up to 1 fF. Our quantum-capacitance measurements show flux h/2e-periodic bimodality with a signal-to-noise ratio (SNR) of 1 in 3.6 microseconds at optimal flux values. From the time traces of the quantum-capacitance measurements, they extract a dwell time in the two associated states that is longer than 1 ms at in-plane magnetic fields of approximately 2 T. They discuss the interpretation of their measurements in terms of both topologically trivial and non-trivial origins. The large capacitance shift and long poisoning time enable a parity measurement with an assignment error probability of 1%.</p><div class="nextb-last-paragraph" style="margin-left: auto; margin-right: auto; text-align: center; " id="nextb-1157882563">
+<div data-aaad='true' data-aa-adunit='/339474670/Nextbigfuture_A/InContent_3'></div>
+<div data-onpage='true' data-adpath='/339474670,3911572/Nextbigfuture_B/InContent_3'></div></div>
+<p>They have presented dispersive gate-sensing measurements of the quantum capacitance in InAs–Al hybrid devices using a system architecture that can be adapted to other materials platforms. After tuning the nanowire density and in-plane magnetic field into the parameter regime identified by the TGP14 and balancing the interferometer formed by the nanowire and the quantum dots, we observed a flux-dependent bimodal RTS in the quantum capacitance, which we interpret as switches of the parity of a fermionic state in the wire. They have fit these data to a model in which the fermion parity is associated with two MZMs localized at the opposite ends of a 1DTS and find good agreement. These measurements do not, by themselves, determine whether the low-energy states detected by interferometry are topological. However, our data tightly constrain the allowable energy splittings in models of trivial Andreev states.</p>
+<p>In conclusion, their findings represent substantial progress towards the realization of a topological qubit based on measurement-only operations. Single-shot fermion parity measurements are a key requirement for a Majorana-based topological quantum computation architecture.</p>
+<div class="saboxplugin-wrap" itemtype="http://schema.org/Person" itemscope itemprop="author"><div class="saboxplugin-tab"><div class="saboxplugin-gravatar"><img decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAQAAAABYmaj5AAAAAnRSTlMAAHaTzTgAAAAUSURBVDjLY2AYBaNgFIyCUUBPAAAFeAABKXG5/AAAAABJRU5ErkJggg==" width="100"  height="100" alt="" itemprop="image" data-src="https://nextbigfuture.s3.amazonaws.com/uploads/2020/08/brianheadshot.jpg" class="lazyload" data-eio-rwidth="100" data-eio-rheight="100"><noscript><img decoding="async" src="https://nextbigfuture.s3.amazonaws.com/uploads/2020/08/brianheadshot.jpg" width="100"  height="100" alt="" itemprop="image" data-eio="l"></noscript></div><div class="saboxplugin-authorname"><a href="https://www.nextbigfuture.com/author/brian-wang" class="vcard author" rel="author"><span class="fn">Brian Wang</span></a></div><div class="saboxplugin-desc"><div itemprop="description"><p>Brian Wang is a Futurist Thought Leader and a popular Science blogger with 1 million readers per month. His blog Nextbigfuture.com is ranked #1 Science News Blog. It covers many disruptive technology and trends including Space, Robotics, Artificial Intelligence, Medicine, Anti-aging Biotechnology, and Nanotechnology.</p>
+<p>Known for identifying cutting edge technologies, he is currently a Co-Founder of a startup and fundraiser for high potential early-stage companies. He is the Head of Research for Allocations for deep technology investments and an Angel Investor at Space Angels.</p>
+<p>A frequent speaker at corporations, he has been a TEDx speaker, a Singularity University speaker and guest at numerous interviews for radio and podcasts.  He is open to public speaking and advising engagements.</p>
+</div></div><div class="clearfix"></div><div class="saboxplugin-socials "><a title="Linkedin" target="_self" href="https://www.linkedin.com/in/brian-wang-93645/" rel="nofollow noopener" class="saboxplugin-icon-grey"><svg aria-hidden="true" class="sab-linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></span></a><a title="Youtube" target="_self" href="https://www.youtube.com/user/nextbigfuture/videos" rel="nofollow noopener" class="saboxplugin-icon-grey"><svg aria-hidden="true" class="sab-youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></span></a></div></div></div>		</div>
+
+				<footer class="entry-meta" aria-label="Entry meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" /></svg></span><span class="screen-reader-text">Categories </span><a href="https://www.nextbigfuture.com/category/artificial-intelligence" rel="category tag">Artificial intelligence</a>, <a href="https://www.nextbigfuture.com/category/news" rel="category tag">News</a>, <a href="https://www.nextbigfuture.com/category/quantum-computers" rel="category tag">Quantum computers</a>, <a href="https://www.nextbigfuture.com/category/science" rel="category tag">Science</a>, <a href="https://www.nextbigfuture.com/category/superconductor" rel="category tag">Superconductor</a>, <a href="https://www.nextbigfuture.com/category/technology" rel="category tag">Technology</a>, <a href="https://www.nextbigfuture.com/category/world" rel="category tag">World</a></span> <span class="tags-links"><span class="gp-icon icon-tags"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M20 39.5c-8.836 0-16 7.163-16 16v176c0 4.243 1.686 8.313 4.687 11.314l224 224c6.248 6.248 16.378 6.248 22.626 0l176-176c6.244-6.244 6.25-16.364.013-22.615l-223.5-224A15.999 15.999 0 00196.5 39.5H20zm56 96c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24z"/><path d="M259.515 43.015c4.686-4.687 12.284-4.687 16.97 0l228 228c4.686 4.686 4.686 12.284 0 16.97l-180 180c-4.686 4.687-12.284 4.687-16.97 0-4.686-4.686-4.686-12.284 0-16.97L479.029 279.5 259.515 59.985c-4.686-4.686-4.686-12.284 0-16.97z" /></svg></span><span class="screen-reader-text">Tags </span><a href="https://www.nextbigfuture.com/tag/microsoft" rel="tag">microsoft</a>, <a href="https://www.nextbigfuture.com/tag/qubits" rel="tag">qubits</a>, <a href="https://www.nextbigfuture.com/tag/science" rel="tag">science</a>, <a href="https://www.nextbigfuture.com/tag/superconductor" rel="tag">superconductor</a>, <a href="https://www.nextbigfuture.com/tag/technology" rel="tag">technology</a>, <a href="https://www.nextbigfuture.com/tag/topological-quantum-computer" rel="tag">topological quantum computer</a></span> 		<nav id="nav-below" class="post-navigation" aria-label="Posts">
+			<div class="nav-previous"><span class="gp-icon icon-arrow-left"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 138.212c0 2.265-1.133 4.813-2.832 6.512L64.276 256.001l111.317 111.277c1.7 1.7 2.832 4.247 2.832 6.513 0 2.265-1.133 4.813-2.832 6.512L161.43 394.46c-1.7 1.7-4.249 2.832-6.514 2.832-2.266 0-4.816-1.133-6.515-2.832L16.407 262.514c-1.699-1.7-2.832-4.248-2.832-6.513 0-2.265 1.133-4.813 2.832-6.512l131.994-131.947c1.7-1.699 4.249-2.831 6.515-2.831 2.265 0 4.815 1.132 6.514 2.831l14.163 14.157c1.7 1.7 2.832 3.965 2.832 6.513z" fill-rule="nonzero" /></svg></span><span class="prev"><a href="https://www.nextbigfuture.com/2025/02/a-debt-spiral-and-us-financial-collapse-in-the-2030s.html" rel="prev">A Debt Spiral and US Financial Collapse in the 2030s</a></span></div><div class="nav-next"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero" /></svg></span><span class="next"><a href="https://www.nextbigfuture.com/2025/02/how-fertilizer-and-food-could-become-cheaper-again.html" rel="next">How Fertilizer and Food Could Become Cheaper Again</a></span></div>		</nav>
+				</footer>
+			</div>
+</article>
+
+			<div class="comments-area">
+				<div id="comments">
+
+	<h2 class="comments-title">8 thoughts on &ldquo;Microsoft Majorana 1 Chip Has 8 Qubits Right Now with a Roadmap to 1 Million Raw Qubits&rdquo;</h2>
+		<ol class="comment-list">
+			
+		<li id="comment-216085" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-216085"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/87427873831fd5adb3428e4795ade689?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/87427873831fd5adb3428e4795ade689?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/87427873831fd5adb3428e4795ade689?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/87427873831fd5adb3428e4795ade689?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Robert C</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216085">									<time datetime="2025-02-22T14:50:09-08:00" itemprop="datePublished">
+										February 22, 2025 at 2:50 pm									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>I&#8217;m very impressed. Question: How do they connect/integrate it into our current technology?</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216085" data-commentid="216085" data-postid="201211" data-belowelement="div-comment-216085" data-respondelement="respond" data-replyto="Reply to Robert C" aria-label="Reply to Robert C">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-216083" class="comment odd alt thread-odd thread-alt depth-1">
+			<article class="comment-body" id="div-comment-216083"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/8af405e8204707baf2695456cf4fbd53?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/8af405e8204707baf2695456cf4fbd53?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/8af405e8204707baf2695456cf4fbd53?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/8af405e8204707baf2695456cf4fbd53?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Robert C</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216083">									<time datetime="2025-02-22T14:28:45-08:00" itemprop="datePublished">
+										February 22, 2025 at 2:28 pm									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>The &#8220;problem&#8221; I see with QM technology, is it&#8217;s ability to integrate with the technology we have today. Dealing with a 1and0 world, becomes much more &#8220;awkward&#8221; when &#8220;1and0&#8221; happen at the same time. Our current technology, can not deal with it. No matter how fast your &#8220;adding machine&#8221; is, it can&#8217;t deal with concepts it was never designed to &#8220;compute&#8221;. Both QM based computers, and biological informatics operate on principles simple digital computers, do not. I don&#8217;t have an answer to this problem, but if may make an observation?</p>
+<p>Artificial prosthetics that involve electronics, have long had a &#8220;problem&#8221; connecting with the person there attached to. Our current technology, and biology just don&#8217;t work the same. Makes it very hard for our limited technology, to integrate with us. What I have read, is if an electrical system can &#8220;pause and absorb&#8221; data from human muscles for just a few milliseconds, it will better react to what human muscles actually do. Electrical systems operate must faster then we do. But we are much more adaptable and robust. We take our time, but only by a few milliseconds. It&#8217;s connecting the dots between technologies, that make&#8217;s it work.</p>
+<p>I think that&#8217;s one way to make quantum mechanic technology work for us. We need to connect the dots.</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216083" data-commentid="216083" data-postid="201211" data-belowelement="div-comment-216083" data-respondelement="respond" data-replyto="Reply to Robert C" aria-label="Reply to Robert C">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-216062" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-216062"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Jim Takchess</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216062">									<time datetime="2025-02-22T06:17:12-08:00" itemprop="datePublished">
+										February 22, 2025 at 6:17 am									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p><a href="https://www.wsj.com/science/physics/microsoft-quantum-computing-physicists-skeptical-d3ec07f0?st=pemYah" rel="nofollow ugc">https://www.wsj.com/science/physics/microsoft-quantum-computing-physicists-skeptical-d3ec07f0?st=pemYah</a>.    Wsj published this today</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216062" data-commentid="216062" data-postid="201211" data-belowelement="div-comment-216062" data-respondelement="respond" data-replyto="Reply to Jim Takchess" aria-label="Reply to Jim Takchess">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-216033" class="comment odd alt thread-odd thread-alt depth-1">
+			<article class="comment-body" id="div-comment-216033"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/1631ab46ffae92d181745ae26fc08b14?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/1631ab46ffae92d181745ae26fc08b14?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/1631ab46ffae92d181745ae26fc08b14?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/1631ab46ffae92d181745ae26fc08b14?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">dumpster4</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216033">									<time datetime="2025-02-21T09:45:04-08:00" itemprop="datePublished">
+										February 21, 2025 at 9:45 am									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>But can it borrow computing power from different universes?        🙂</p>
+<p>&#8220;Google Quantum AI founder Hartmut Neven wrote in his blog post that this chip was so mind-boggling fast that it must have borrowed computational power from other universes.</p>
+<p>Ergo the chip’s performance indicates that parallel universes exist and “we live in a multiverse.”&#8221;</p>
+<p>Source:</p>
+<p><a href="https://techcrunch.com/2024/12/10/google-says-its-new-quantum-chip-indicates-that-multiple-universes-exist/" rel="nofollow ugc">https://techcrunch.com/2024/12/10/google-says-its-new-quantum-chip-indicates-that-multiple-universes-exist/</a></p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216033" data-commentid="216033" data-postid="201211" data-belowelement="div-comment-216033" data-respondelement="respond" data-replyto="Reply to dumpster4" aria-label="Reply to dumpster4">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-216028" class="comment even thread-even depth-1">
+			<article class="comment-body" id="div-comment-216028"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f7db43de8b72a44cbae15a06d3893b0c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Jim Takchess</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216028">									<time datetime="2025-02-21T07:01:34-08:00" itemprop="datePublished">
+										February 21, 2025 at 7:01 am									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Thanks Brian,<br />
+Recenting I read Computing with Quantum Cats which was a good intro though dated book on QC. Does anyone have recommendations on a more recent popular book on QC ? Thanks</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216028" data-commentid="216028" data-postid="201211" data-belowelement="div-comment-216028" data-respondelement="respond" data-replyto="Reply to Jim Takchess" aria-label="Reply to Jim Takchess">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+
+		<li id="comment-216002" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article class="comment-body" id="div-comment-216002"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/a33f001d7b967037a566cff2af714722?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/a33f001d7b967037a566cff2af714722?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/a33f001d7b967037a566cff2af714722?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/a33f001d7b967037a566cff2af714722?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Karl</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216002">									<time datetime="2025-02-20T18:17:45-08:00" itemprop="datePublished">
+										February 20, 2025 at 6:17 pm									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>&#8220;in years, not decades&#8221; Shouldn&#8217;t the statement rather be closer to &#8220;minutes not millenia&#8221;<br />
+Isn&#8217;t that the real essance of quantum compute ?<br />
+I&#8217;m more interested in the multi thousand qbit impact on the AI learning process as it would speed that stage up to real time.</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216002" data-commentid="216002" data-postid="201211" data-belowelement="div-comment-216002" data-respondelement="respond" data-replyto="Reply to Karl" aria-label="Reply to Karl">Reply</a></span>				</div>
+			</article>
+			<ul class="children">
+
+		<li id="comment-216008" class="comment even depth-2 parent">
+			<article class="comment-body" id="div-comment-216008"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Researcher</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216008">									<time datetime="2025-02-20T18:44:38-08:00" itemprop="datePublished">
+										February 20, 2025 at 6:44 pm									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>“Microsoft today introduced … a new Topological Core architecture that it expects will realize quantum computers capable of solving meaningful, industrial-scale problems in years, not decades.“</p>
+<p>In that sentence, “years” refers to “realize”, not “solving”.  They’re saying that they will be able to build a useful machine in years rather than decades. </p>
+<p>My guess would be that a machine capable of breaking useful cryptography might be on the order of 10 years away, which would count as years rather than decades. But there are still a number of surprises that might happen to delay that. Or accelerate it. I guess we’ll see.</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216008" data-commentid="216008" data-postid="201211" data-belowelement="div-comment-216008" data-respondelement="respond" data-replyto="Reply to Researcher" aria-label="Reply to Researcher">Reply</a></span>				</div>
+			</article>
+			<ul class="children">
+
+		<li id="comment-216009" class="comment odd alt depth-3">
+			<article class="comment-body" id="div-comment-216009"  itemtype="https://schema.org/Comment" itemscope>
+				<footer class="comment-meta" aria-label="Comment meta">
+					<img alt='' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQAAAAA2RLUcAAAAAnRSTlMAAHaTzTgAAAAOSURBVBjTY2AYBYMJAAABkAABxZvbSQAAAABJRU5ErkJggg=="  class="avatar avatar-50 photo lazyload" height='50' width='50' decoding='async' data-src="https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=50&d=mm&r=g" data-srcset="https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=100&#038;d=mm&#038;r=g 2x" data-eio-rwidth="50" data-eio-rheight="50" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/06d528c6cabd90521084a3cfd1c41e5c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async' data-eio="l" /></noscript>					<div class="comment-author-info">
+						<div class="comment-author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope>
+							<cite itemprop="name" class="fn">Researcher</cite>						</div>
+
+													<div class="entry-meta comment-metadata">
+								<a href="https://www.nextbigfuture.com/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#comment-216009">									<time datetime="2025-02-20T18:47:44-08:00" itemprop="datePublished">
+										February 20, 2025 at 6:47 pm									</time>
+								</a>							</div>
+												</div>
+
+									</footer>
+
+				<div class="comment-content" itemprop="text">
+					<p>Also, it isn’t obvious that a quantum computer could speed up AI at all. It wouldn’t be able to speed up the training of the current LLM architecture. There have been proposals for other kinds of AI that might benefit from a quantum computer. But no one knows whether those kinds of AI would be useful. The only way to know is to try it. Which can’t really be done until we have giant quantum computers.</p>
+<span class="reply"><a rel="nofollow" class="comment-reply-link" href="#comment-216009" data-commentid="216009" data-postid="201211" data-belowelement="div-comment-216009" data-respondelement="respond" data-replyto="Reply to Researcher" aria-label="Reply to Researcher">Reply</a></span>				</div>
+			</article>
+			</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2025/02/microsoft-majorana-1-chip-has-8-qubits-right-now-with-a-roadmap-to-1-million-raw-qubits.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.nextbigfuture.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><label for="author" class="screen-reader-text">Name</label><input placeholder="Name" id="author" name="author" type="text" value="" size="30" />
+<label for="email" class="screen-reader-text">Email</label><input placeholder="Email" id="email" name="email" type="email" value="" size="30" />
+<label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30" />
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='201211' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			</div>
+
+					</main>
+	</div>
+
+	<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+	<div class="inside-right-sidebar">
+		<div style="width:300px;height:250px;margin:10px auto;">
+
+<div data-onpage=true data-adpath="/339474670,3911572/Nextbigfuture/Sidebar_1"></div>
+
+</div><aside id="custom_html-2" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div data-aaad='true' data-aa-adunit='/339474670/Nextbigfuture_A/Sidebar_1'></div>
+<div data-onpage='true' data-adpath='/339474670,3911572/Nextbigfuture_B/Sidebar_1'></div>
+
+
+
+
+
+</div></aside><aside id="categories-2" class="widget inner-padding widget_categories"><h2 class="widget-title">Categories</h2><form action="https://www.nextbigfuture.com" method="get"><label class="screen-reader-text" for="cat">Categories</label><select  name='cat' id='cat' class='postform'>
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="8121">Antiaging</option>
+	<option class="level-0" value="1312">Artificial intelligence</option>
+	<option class="level-0" value="1430">Augmented reality</option>
+	<option class="level-0" value="1412">Blockchain</option>
+	<option class="level-0" value="1415">Cryptocurrency</option>
+	<option class="level-0" value="1414">Drones</option>
+	<option class="level-0" value="1481">Ecommerce</option>
+	<option class="level-0" value="1302">Energy</option>
+	<option class="level-0" value="1413">Fintech</option>
+	<option class="level-0" value="1441">Gadgets</option>
+	<option class="level-0" value="14324">Humanoid Robot</option>
+	<option class="level-0" value="1422">Ico</option>
+	<option class="level-0" value="8018">Interviews</option>
+	<option class="level-0" value="1309">Medicine</option>
+	<option class="level-0" value="1303">Military</option>
+	<option class="level-0" value="8017">News</option>
+	<option class="level-0" value="14078">press release</option>
+	<option class="level-0" value="1311">Quantum computers</option>
+	<option class="level-0" value="1310">Robotics</option>
+	<option class="level-0" value="1306">Science</option>
+	<option class="level-0" value="14473">solar</option>
+	<option class="level-0" value="1304">Space</option>
+	<option class="level-0" value="13281">Sponsored</option>
+	<option class="level-0" value="14220">Superconductor</option>
+	<option class="level-0" value="1307">Technology</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="1463">Virtual reality</option>
+	<option class="level-0" value="1308">World</option>
+</select>
+</form><script>
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+</script>
+</aside><aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div data-aaad='true' data-aa-adunit='/339474670/Nextbigfuture_A/Sidebar_2'></div>
+<div data-onpage='true' data-adpath='/339474670,3911572/Nextbigfuture_B/Sidebar_2'></div>
+
+
+
+
+
+</div></aside>
+		<aside id="recent-posts-2" class="widget inner-padding widget_recent_entries">
+		<h2 class="widget-title">Recent Posts</h2>
+		<ul>
+											<li>
+					<a href="https://www.nextbigfuture.com/2025/02/sina-finance-is-reporting-imminent-tesla-china-fsd-rollout.html">Sina Finance is Reporting Imminent Tesla China FSD Rollout</a>
+									</li>
+											<li>
+					<a href="https://www.nextbigfuture.com/2025/02/poland-clone-robotics-make-liquid-muscled-synthetic-copy-of-the-human-body.html">Poland Clone Robotics Make Liquid Muscled Synthetic Copy of the Human Body</a>
+									</li>
+											<li>
+					<a href="https://www.nextbigfuture.com/2025/02/anthropic-releases-claude-3-7-sonnet-a-reasoning-model.html">Anthropic Releases Claude 3.7 Sonnet a Reasoning Model</a>
+									</li>
+											<li>
+					<a href="https://www.nextbigfuture.com/2025/02/overcoming-constraints-and-limits-to-scaling-ai.html">Overcoming Constraints and Limits to Scaling AI</a>
+									</li>
+											<li>
+					<a href="https://www.nextbigfuture.com/2025/02/what-have-grandmasters-learned-from-superintelligent-chess-programs.html">What Have Grandmasters Learned from Superintelligent Chess Programs?</a>
+									</li>
+					</ul>
+
+		</aside><aside id="custom_html-4" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div data-aaad='true' data-aa-adunit='/339474670/Nextbigfuture_A/Sidebar_3'></div>
+<div data-onpage='true' data-adpath='/339474670,3911572/Nextbigfuture_B/Sidebar_3'></div>
+</div></aside>	</div>
+</div>
+
+	</div>
+</div>
+
+
+<div class="site-footer">
+			<footer class="site-info" aria-label="Site"  itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container">
+								<div class="copyright-bar">
+					&copy; 2025 Next Big Future				</div>
+			</div>
+		</footer>
+		</div>
+
+<script type="text/javascript">
+ window._taboola = window._taboola || [];
+ _taboola.push({flush: true});
+</script><script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><script id="eio-lazy-load-js-before">
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"threshold":0,"use_dpr":1};
+</script>
+<script src="https://www.nextbigfuture.com/wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js?ver=810" id="eio-lazy-load-js" async data-wp-strategy="async"></script>
+<script src="https://widgetlogic.org/v2/js/data.js?t=1740398400&amp;ver=6.0.0" id="widget-logic_live_match_widget-js"></script>
+<!--[if lte IE 11]>
+<script src="https://www.nextbigfuture.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.5.1" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="https://www.nextbigfuture.com/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.5.1" id="generate-menu-js"></script>
+<script src="https://www.nextbigfuture.com/wp-includes/js/comment-reply.min.js?ver=6.7.2" id="comment-reply-js" async data-wp-strategy="async"></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+</body>
+</html>
+
+<!-- Cache served by breeze CACHE - Last modified: Mon, 24 Feb 2025 19:53:49 GMT -->
