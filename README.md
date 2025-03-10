@@ -2,12 +2,12 @@
 
 chishikAI is your Deep Graph Researcher. Given a research topic, it finds relevant web resources and turn them into a knowledge graph database that you can visualize, query, and expand indefinitely. 
 
-### How to run the notebook chishikAI.ipynb
+### How to set up to run the notebook chishikAI.ipynb
 
-clone the repo
-create Python env with requirements.txt
-create .env file with OPENAI_API_KEY
-create an instance on ArangoDB cloud and gets credentials
+- clone the repo
+- create Python env with requirements.txt
+- create .env file with OPENAI_API_KEY
+- create an instance on ArangoDB cloud and gets credentials
 
 ### Inspiration
 ChishikAI was inspired by the need for intuitive knowledge representation. Traditional AI responses often overwhelm users with text, so I aimed to create a tool that visualizes knowledge through interactive graphs, enhancing the research experience.
