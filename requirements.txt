@@ -9,7 +9,7 @@ tenacity
 # Data processing and scientific libraries
 numpy
 networkx
-graspologic
+
 
 # File manipulation
 docling
